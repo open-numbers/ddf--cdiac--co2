@@ -26,7 +26,7 @@ def to_concept_id(s):
     return s1.strip()
 
 
-def concat_data(files, skip=0, rename_header=False, **kwargs):
+def concat_data(files, skip=0, **kwargs):
     """concatenate a list of data from source and return one dataframe.
     Additional keyword arguments will be passed to pandas read_csv function.
     """
@@ -35,7 +35,7 @@ def concat_data(files, skip=0, rename_header=False, **kwargs):
         path = os.path.join(source_dir, x)
         df = pd.read_csv(path, **kwargs)
         # adding a new key to show which file is the data from.
-        ver = x.split('.')[1]
+        ver = x.split('.')[1]  # 'global.1975_2008.csv' => '1975_2008'
         df['version'] = ver
 
         # quick fix for malformed csv downloaded from data povider
@@ -43,7 +43,7 @@ def concat_data(files, skip=0, rename_header=False, **kwargs):
             df = df.rename(columns={'Year"': 'Year'})
         df.columns = list(map(lambda x: x.lower().replace('\n', ''), df.columns))
 
-        df = df.ix[skip:]
+        df = df.ix[skip:]  # skip first few rows of data
         res.append(df)
 
     return pd.concat(res)
@@ -58,6 +58,7 @@ def extract_concepts(global_df, nation_df):
     # headers for dataframe and csv exports
     headers = ['concept', 'name', 'concept_type']
 
+    # define discrete and continuous concepts
     concept_discrete = ['year', 'nation', 'version']
 
     cols = np.r_[global_df.columns, nation_df.columns]
@@ -85,7 +86,7 @@ def extract_datapoints(df):
     df.columns = list(map(to_concept_id, df.columns))
     df['year'] = df['year'].apply(int)
 
-    if 'nation' in df.columns:
+    if 'nation' in df.columns:  # if it's nation data, make 'nation' as index
         df = df.set_index(['nation', 'year', 'version'])
     else:
         df = df.set_index(['year', 'version'])
