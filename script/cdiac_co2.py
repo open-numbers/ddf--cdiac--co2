@@ -3,15 +3,11 @@
 
 import pandas as pd
 import numpy as np
-import os
 import re
 
 # configuration of file path
 source_dir = '../source/'
 out_dir = '../output/'
-
-global_files = [x for x in os.listdir(source_dir) if x.startswith('global')]
-nation_files = [x for x in os.listdir(source_dir) if x.startswith('nation')]
 
 
 # functions for building dataframe
@@ -98,7 +94,12 @@ def extract_datapoints(df):
 
 
 if __name__ == '__main__':
+    import os
+
     print('reading source files...')
+    global_files = [x for x in os.listdir(source_dir) if x.startswith('global')]
+    nation_files = [x for x in os.listdir(source_dir) if x.startswith('nation')]
+
     global_df = concat_data(global_files, skip=1)
     nation_df = concat_data(nation_files, skip=2, na_values='.')
 
@@ -108,10 +109,10 @@ if __name__ == '__main__':
     continuous_df.to_csv(os.path.join(out_dir, 'ddf--concepts--continuous.csv'), index=False)
 
     print('creating data points files...')
-    for c, df in extract_datapoints(global_df).iteritems():
+    for c, df in extract_datapoints(global_df).items():
         path = os.path.join(out_dir, 'ddf--datapoints--'+c+'--by--global--year.csv')
         df.to_csv(path, header=True)
 
-    for c, df in extract_datapoints(nation_df).iteritems():
+    for c, df in extract_datapoints(nation_df).items():
         path = os.path.join(out_dir, 'ddf--datapoints--'+c+'--by--nation--year.csv')
         df.to_csv(path, header=True)
