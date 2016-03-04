@@ -15,5 +15,5 @@ We keep it as it is for now. We will probably come back to solve this nicer, har
 
 - [the difference between C and CO_2](http://thinkprogress.org/climate/2008/03/25/202471/the-biggest-source-of-mistakes-c-vs-co2/)
 - [CDIAC's data exploration tools](http://cdiac.ornl.gov/CO2_Emission/timeseries/global): 
-we know the source data _metric is ton_ of carbon by comparing the source data and the data downloaded from the tool
+we know the source data metric is _ton of carbon_ by comparing the source data and the data downloaded from the tool
 
