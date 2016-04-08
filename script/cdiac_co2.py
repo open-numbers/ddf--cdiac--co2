@@ -4,6 +4,7 @@
 import pandas as pd
 import numpy as np
 import re
+from index import create_index_file
 
 # configuration of file path
 source_dir = '../source/'
@@ -116,3 +117,6 @@ if __name__ == '__main__':
     for c, df in extract_datapoints(nation_df).items():
         path = os.path.join(out_dir, 'ddf--datapoints--'+c+'--by--nation--year.csv')
         df.to_csv(path, header=True)
+
+    print('creating index file...')
+    create_index_file(out_dir, os.path.join(out_dir, 'ddf--index.csv'))
