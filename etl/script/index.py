@@ -7,7 +7,7 @@ import os
 import re
 
 # global variables
-out_dir = '../output'
+out_dir = '../../'
 index_columns = ['key', 'value', 'file']
 
 

@@ -7,8 +7,8 @@ import re
 from index import create_index_file
 
 # configuration of file path
-source_dir = '../source/'
-out_dir = '../output/'
+source_dir = './source/'
+out_dir = '../../'
 
 
 # functions for building dataframe
