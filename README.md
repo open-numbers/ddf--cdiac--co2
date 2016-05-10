@@ -9,6 +9,8 @@ In fact, some of the concepts, for example `Total carbon emissions from fossil-f
 from global file and `Total CO2 emissions from fossil-fuels (thousand metric tons of C)`
 from nation file are same concept but with a different scale.
 
+Note: One ton of carbon equals 44/12 = 11/3 = 3.67 tons of carbon dioxide
+
 We keep it as it is for now. We will probably come back to solve this nicer, harmonize it.
 
 ## Reference
