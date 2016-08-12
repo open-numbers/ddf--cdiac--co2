@@ -1,0 +1,252 @@
+nation,nationi_id
+AFGHANISTAN,afghanistan
+ALBANIA,albania
+ALGERIA,algeria
+ANDORRA,andorra
+ANGOLA,angola
+ANGUILLA,anguilla
+ANTARCTIC FISHERIES,antarctic_fisheries
+ANTIGUA & BARBUDA,antigua_barbuda
+ARGENTINA,argentina
+ARMENIA,armenia
+ARUBA,aruba
+AUSTRALIA,australia
+AUSTRIA,austria
+AZERBAIJAN,azerbaijan
+BAHAMAS,bahamas
+BAHRAIN,bahrain
+BANGLADESH,bangladesh
+BARBADOS,barbados
+BELARUS,belarus
+BELGIUM,belgium
+BELIZE,belize
+BENIN,benin
+BERMUDA,bermuda
+BHUTAN,bhutan
+BOSNIA & HERZEGOVINA,bosnia_herzegovina
+BOTSWANA,botswana
+BRAZIL,brazil
+BRITISH VIRGIN ISLANDS,british_virgin_islands
+BRUNEI (DARUSSALAM),brunei_darussalam
+BULGARIA,bulgaria
+BURKINA FASO,burkina_faso
+BURUNDI,burundi
+CAMBODIA,cambodia
+CANADA,canada
+CAPE VERDE,cape_verde
+CAYMAN ISLANDS,cayman_islands
+CENTRAL AFRICAN REPUBLIC,central_african_republic
+CHAD,chad
+CHILE,chile
+CHINA (MAINLAND),china_mainland
+CHRISTMAS ISLAND,christmas_island
+COLOMBIA,colombia
+COMOROS,comoros
+CONGO,congo
+COOK ISLANDS,cook_islands
+COSTA RICA,costa_rica
+COTE D IVOIRE,cote_d_ivoire
+CROATIA,croatia
+CUBA,cuba
+CYPRUS,cyprus
+CZECH REPUBLIC,czech_republic
+CZECHOSLOVAKIA,czechoslovakia
+DEMOCRATIC PEOPLE S REPUBLIC OF KOREA,democratic_people_s_republic_of_korea
+DEMOCRATIC REPUBLIC OF THE CONGO (FORMERLY ZAIRE),democratic_republic_of_the_congo_formerly_zaire
+DEMOCRATIC REPUBLIC OF VIETNAM,democratic_republic_of_vietnam
+DENMARK,denmark
+DJIBOUTI,djibouti
+DOMINICA,dominica
+DOMINICAN REPUBLIC,dominican_republic
+EAST & WEST PAKISTAN,east_west_pakistan
+ECUADOR,ecuador
+EGYPT,egypt
+EL SALVADOR,el_salvador
+EQUATORIAL GUINEA,equatorial_guinea
+ERITREA,eritrea
+ESTONIA,estonia
+ETHIOPIA,ethiopia
+FAEROE ISLANDS,faeroe_islands
+FALKLAND ISLANDS (MALVINAS),falkland_islands_malvinas
+FEDERAL REPUBLIC OF GERMANY,federal_republic_of_germany
+FEDERATED STATES OF MICRONESIA,federated_states_of_micronesia
+FEDERATION OF MALAYA-SINGAPORE,federation_of_malaya_singapore
+FIJI,fiji
+FINLAND,finland
+FORMER DEMOCRATIC YEMEN,former_democratic_yemen
+FORMER GERMAN DEMOCRATIC REPUBLIC,former_german_democratic_republic
+FORMER PANAMA CANAL ZONE,former_panama_canal_zone
+FORMER YEMEN,former_yemen
+FRANCE (INCLUDING MONACO),france_including_monaco
+FRENCH EQUATORIAL AFRICA,french_equatorial_africa
+FRENCH GUIANA,french_guiana
+FRENCH INDO-CHINA,french_indo_china
+FRENCH POLYNESIA,french_polynesia
+FRENCH WEST AFRICA,french_west_africa
+GABON,gabon
+GAMBIA,gambia
+GEORGIA,georgia
+GERMANY,germany
+GHANA,ghana
+GIBRALTAR,gibraltar
+GREECE,greece
+GREENLAND,greenland
+GRENADA,grenada
+GUADELOUPE,guadeloupe
+GUATEMALA,guatemala
+GUINEA,guinea
+GUINEA BISSAU,guinea_bissau
+GUYANA,guyana
+HAITI,haiti
+HONDURAS,honduras
+HONG KONG SPECIAL ADMINSTRATIVE REGION OF CHINA,hong_kong_special_adminstrative_region_of_china
+HUNGARY,hungary
+ICELAND,iceland
+INDIA,india
+INDONESIA,indonesia
+IRAQ,iraq
+IRELAND,ireland
+ISLAMIC REPUBLIC OF IRAN,islamic_republic_of_iran
+ISRAEL,israel
+ITALY (INCLUDING SAN MARINO),italy_including_san_marino
+JAMAICA,jamaica
+JAPAN,japan
+JAPAN (EXCLUDING THE RUYUKU ISLANDS),japan_excluding_the_ruyuku_islands
+JORDAN,jordan
+KAZAKHSTAN,kazakhstan
+KENYA,kenya
+KIRIBATI,kiribati
+KUWAIT,kuwait
+KUWAITI OIL FIRES,kuwaiti_oil_fires
+KYRGYZSTAN,kyrgyzstan
+LAO PEOPLE S DEMOCRATIC REPUBLIC,lao_people_s_democratic_republic
+LATVIA,latvia
+LEBANON,lebanon
+LEEWARD ISLANDS,leeward_islands
+LIBERIA,liberia
+LIBYAN ARAB JAMAHIRIYAH,libyan_arab_jamahiriyah
+LITHUANIA,lithuania
+LUXEMBOURG,luxembourg
+MACAU SPECIAL ADMINSTRATIVE REGION OF CHINA,macau_special_adminstrative_region_of_china
+MACEDONIA,macedonia
+MADAGASCAR,madagascar
+MALAWI,malawi
+MALAYSIA,malaysia
+MALDIVES,maldives
+MALI,mali
+MALTA,malta
+MARSHALL ISLANDS,marshall_islands
+MARTINIQUE,martinique
+MAURITANIA,mauritania
+MAURITIUS,mauritius
+MEXICO,mexico
+MONGOLIA,mongolia
+MONTENEGRO,montenegro
+MONTSERRAT,montserrat
+MOROCCO,morocco
+MOZAMBIQUE,mozambique
+MYANMAR (FORMERLY BURMA),myanmar_formerly_burma
+NAMIBIA,namibia
+NAURU,nauru
+NEPAL,nepal
+NETHERLAND ANTILLES,netherland_antilles
+NETHERLAND ANTILLES AND ARUBA,netherland_antilles_and_aruba
+NETHERLANDS,netherlands
+NEW CALEDONIA,new_caledonia
+NEW ZEALAND,new_zealand
+NICARAGUA,nicaragua
+NIGER,niger
+NIGERIA,nigeria
+NIUE,niue
+NORWAY,norway
+OCCUPIED PALESTINIAN TERRITORY,occupied_palestinian_territory
+OMAN,oman
+PACIFIC ISLANDS (PALAU),pacific_islands_palau
+PAKISTAN,pakistan
+PALAU,palau
+PANAMA,panama
+PAPUA NEW GUINEA,papua_new_guinea
+PARAGUAY,paraguay
+PENINSULAR MALAYSIA,peninsular_malaysia
+PERU,peru
+PHILIPPINES,philippines
+PLURINATIONAL STATE OF BOLIVIA,plurinational_state_of_bolivia
+POLAND,poland
+PORTUGAL,portugal
+PUERTO RICO,puerto_rico
+QATAR,qatar
+REPUBLIC OF CAMEROON,republic_of_cameroon
+REPUBLIC OF KOREA,republic_of_korea
+REPUBLIC OF MOLDOVA,republic_of_moldova
+REPUBLIC OF SOUTH VIETNAM,republic_of_south_vietnam
+REUNION,reunion
+RHODESIA-NYASALAND,rhodesia_nyasaland
+ROMANIA,romania
+RUSSIAN FEDERATION,russian_federation
+RWANDA,rwanda
+RWANDA-URUNDI,rwanda_urundi
+RYUKYU ISLANDS,ryukyu_islands
+SABAH,sabah
+SAINT HELENA,saint_helena
+SAINT LUCIA,saint_lucia
+SAMOA,samoa
+SAO TOME & PRINCIPE,sao_tome_principe
+SARAWAK,sarawak
+SAUDI ARABIA,saudi_arabia
+SENEGAL,senegal
+SERBIA,serbia
+SEYCHELLES,seychelles
+SIERRA LEONE,sierra_leone
+SINGAPORE,singapore
+SLOVAKIA,slovakia
+SLOVENIA,slovenia
+SOLOMON ISLANDS,solomon_islands
+SOMALIA,somalia
+SOUTH AFRICA,south_africa
+SPAIN,spain
+SRI LANKA,sri_lanka
+ST. KITTS-NEVIS,st_kitts_nevis
+ST. KITTS-NEVIS-ANGUILLA,st_kitts_nevis_anguilla
+ST. PIERRE & MIQUELON,st_pierre_miquelon
+ST. VINCENT & THE GRENADINES,st_vincent_the_grenadines
+SUDAN,sudan
+SURINAME,suriname
+SWAZILAND,swaziland
+SWEDEN,sweden
+SWITZERLAND,switzerland
+SYRIAN ARAB REPUBLIC,syrian_arab_republic
+TAIWAN,taiwan
+TAJIKISTAN,tajikistan
+TANGANYIKA,tanganyika
+THAILAND,thailand
+TIMOR-LESTE (FORMERLY EAST TIMOR),timor_leste_formerly_east_timor
+TOGO,togo
+TONGA,tonga
+TRINIDAD AND TOBAGO,trinidad_and_tobago
+TUNISIA,tunisia
+TURKEY,turkey
+TURKMENISTAN,turkmenistan
+TURKS AND CAICOS ISLANDS,turks_and_caicos_islands
+UGANDA,uganda
+UKRAINE,ukraine
+UNITED ARAB EMIRATES,united_arab_emirates
+UNITED KINGDOM,united_kingdom
+UNITED KOREA,united_korea
+UNITED REPUBLIC OF TANZANIA,united_republic_of_tanzania
+UNITED STATES OF AMERICA,united_states_of_america
+URUGUAY,uruguay
+USSR,ussr
+UZBEKISTAN,uzbekistan
+VANUATU,vanuatu
+VENEZUELA,venezuela
+VIET NAM,viet_nam
+WALLIS AND FUTUNA ISLANDS,wallis_and_futuna_islands
+WESTERN SAHARA,western_sahara
+YEMEN,yemen
+YUGOSLAVIA (FORMER SOCIALIST FEDERAL REPUBLIC),yugoslavia_former_socialist_federal_republic
+YUGOSLAVIA (MONTENEGRO & SERBIA),yugoslavia_montenegro_serbia
+ZAMBIA,zambia
+ZANZIBAR,zanzibar
+ZIMBABWE,zimbabwe
+LESOTHO,lesotho
+LIECHTENSTEIN,liechtenstein

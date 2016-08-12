@@ -4,7 +4,8 @@
 import pandas as pd
 import numpy as np
 import re
-from index import create_index_file
+from ddf_utils.index import create_index_file
+from ddf_utils.str import to_concept_id
 
 # configuration of file path
 source_dir = '../source/'
@@ -65,7 +66,7 @@ def extract_concepts(global_df, nation_df):
     discrete_df = pd.DataFrame([], columns=headers)
     discrete_df['name'] = concept_discrete
     discrete_df['concept'] = discrete_df['name'].apply(to_concept_id)
-    discrete_df['concept_type'] = ['time', 'string', 'string']
+    discrete_df['concept_type'] = ['time', 'entity_domain', 'string']
 
     continuous_df = pd.DataFrame([], columns=headers)
     continuous_df['name'] = concept_continuous
@@ -84,6 +85,7 @@ def extract_datapoints(df):
     df['year'] = df['year'].apply(int)
 
     if 'nation' in df.columns:  # if it's nation data, make 'nation' as index
+        df['nation'] = df['nation'].map(to_concept_id)
         df = df.set_index(['nation', 'year', 'version'])
     else:
         df = df.set_index(['year', 'version'])
@@ -109,9 +111,17 @@ if __name__ == '__main__':
     discrete_df.to_csv(os.path.join(out_dir, 'ddf--concepts--discrete.csv'), index=False)
     continuous_df.to_csv(os.path.join(out_dir, 'ddf--concepts--continuous.csv'), index=False)
 
+    # TODO: add nation/global entities
+    print('creating entities files...')
+    nation = nation_df[['nation']].drop_duplicates()
+    nation['nationi_id'] = nation['nation'].map(to_concept_id)
+    nation = nation.rename({'nation': 'name', 'nation_id': 'nation'})
+    path = os.path.join(out_dir, 'ddf--entities--nation.csv')
+    nation.to_csv(path, index=False)
+
     print('creating data points files...')
     for c, df in extract_datapoints(global_df).items():
-        path = os.path.join(out_dir, 'ddf--datapoints--'+c+'--by--global--year.csv')
+        path = os.path.join(out_dir, 'ddf--datapoints--'+c+'--by--year.csv')
         df.to_csv(path, header=True)
 
     for c, df in extract_datapoints(nation_df).items():

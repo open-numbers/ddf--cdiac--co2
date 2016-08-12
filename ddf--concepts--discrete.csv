@@ -1,4 +1,4 @@
 concept,name,concept_type
 year,year,time
-nation,nation,string
+nation,nation,entity_domain
 version,version,string
