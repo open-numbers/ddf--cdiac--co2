@@ -111,11 +111,10 @@ if __name__ == '__main__':
     discrete_df.to_csv(os.path.join(out_dir, 'ddf--concepts--discrete.csv'), index=False)
     continuous_df.to_csv(os.path.join(out_dir, 'ddf--concepts--continuous.csv'), index=False)
 
-    # TODO: add nation/global entities
     print('creating entities files...')
     nation = nation_df[['nation']].drop_duplicates()
-    nation['nationi_id'] = nation['nation'].map(to_concept_id)
-    nation = nation.rename({'nation': 'name', 'nation_id': 'nation'})
+    nation['nation_id'] = nation['nation'].map(to_concept_id)
+    nation.columns = ['name', 'nation']
     path = os.path.join(out_dir, 'ddf--entities--nation.csv')
     nation.to_csv(path, index=False)
 
