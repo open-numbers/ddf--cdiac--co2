@@ -20,4 +20,4 @@ year,total_carbon_emissions_from_fossil_fuel_consumption_and_cement_production_m
 year,total_carbon_emissions_from_fossil_fuels_million_metric_tons_of_c,ddf--datapoints--total_carbon_emissions_from_fossil_fuels_million_metric_tons_of_c--by--year.csv
 "nation,year",total_co2_emissions_from_fossil_fuels_and_cement_production_thousand_metric_tons_of_c,ddf--datapoints--total_co2_emissions_from_fossil_fuels_and_cement_production_thousand_metric_tons_of_c--by--nation--year.csv
 "nation,year",total_co2_emissions_from_fossil_fuels_thousand_metric_tons_of_c,ddf--datapoints--total_co2_emissions_from_fossil_fuels_thousand_metric_tons_of_c--by--nation--year.csv
-nation,nationi_id,ddf--entities--nation.csv
+nation,name,ddf--entities--nation.csv

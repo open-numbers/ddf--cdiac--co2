@@ -1,4 +1,5 @@
 concept,name,concept_type
-year,year,time
-nation,nation,entity_domain
-version,version,string
+year,Year,time
+nation,Nation,entity_domain
+version,Version,string
+name,Name,string

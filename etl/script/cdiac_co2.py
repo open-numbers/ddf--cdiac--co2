@@ -5,7 +5,7 @@ import pandas as pd
 import numpy as np
 import re
 from ddf_utils.index import create_index_file
-from ddf_utils.str import to_concept_id
+from ddf_utils.str import to_concept_id, format_float_sigfig
 
 # configuration of file path
 source_dir = '../source/'
@@ -57,16 +57,16 @@ def extract_concepts(global_df, nation_df):
     headers = ['concept', 'name', 'concept_type']
 
     # define discrete and continuous concepts
-    concept_discrete = ['year', 'nation', 'version']
+    concept_discrete = ['year', 'nation', 'version', 'name']
 
     cols = np.r_[global_df.columns, nation_df.columns]
     concept_continuous = [x for x in cols if x not in concept_discrete]
 
     # build dataframe
     discrete_df = pd.DataFrame([], columns=headers)
-    discrete_df['name'] = concept_discrete
-    discrete_df['concept'] = discrete_df['name'].apply(to_concept_id)
-    discrete_df['concept_type'] = ['time', 'entity_domain', 'string']
+    discrete_df['concept'] = concept_discrete
+    discrete_df['name'] = discrete_df['concept'].str.title()
+    discrete_df['concept_type'] = ['time', 'entity_domain', 'string', 'string']
 
     continuous_df = pd.DataFrame([], columns=headers)
     continuous_df['name'] = concept_continuous
@@ -121,11 +121,13 @@ if __name__ == '__main__':
     print('creating data points files...')
     for c, df in extract_datapoints(global_df).items():
         path = os.path.join(out_dir, 'ddf--datapoints--'+c+'--by--year.csv')
+        df = df.map(format_float_sigfig)
         df.to_csv(path, header=True)
 
     for c, df in extract_datapoints(nation_df).items():
         path = os.path.join(out_dir, 'ddf--datapoints--'+c+'--by--nation--year.csv')
+        df = df.map(format_float_sigfig)
         df.to_csv(path, header=True)
 
     print('creating index file...')
-    create_index_file(out_dir, os.path.join(out_dir, 'ddf--index.csv'))
+    create_index_file(out_dir)
