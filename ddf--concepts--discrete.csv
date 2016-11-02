@@ -1,5 +1,6 @@
 concept,name,concept_type
 year,Year,time
 nation,Nation,entity_domain
-version,Version,string
+global,Global,entity_domain
+version,Version,entity_domain
 name,Name,string

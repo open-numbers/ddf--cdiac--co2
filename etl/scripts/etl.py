@@ -6,22 +6,11 @@ import numpy as np
 import re
 from ddf_utils.index import create_index_file
 from ddf_utils.str import to_concept_id, format_float_sigfig
+from ddf_utils.io import cleanup
 
 # configuration of file path
 source_dir = '../source/'
 out_dir = '../../'
-
-
-# functions for building dataframe
-def to_concept_id(s):
-    '''convert a string to lowercase alphanumeric + underscore id for concepts'''
-    s1 = re.sub(r'[/ -\.\*";]+', '_', s).lower()
-    s1 = s1.replace('\n', '')
-
-    if s1[-1] == '_':
-        s1 = s1[:-1]
-
-    return s1.strip()
 
 
 def concat_data(files, skip=0, **kwargs):
@@ -57,7 +46,7 @@ def extract_concepts(global_df, nation_df):
     headers = ['concept', 'name', 'concept_type']
 
     # define discrete and continuous concepts
-    concept_discrete = ['year', 'nation', 'version', 'name']
+    concept_discrete = ['year', 'nation', 'global', 'version', 'name']
 
     cols = np.r_[global_df.columns, nation_df.columns]
     concept_continuous = [x for x in cols if x not in concept_discrete]
@@ -66,7 +55,7 @@ def extract_concepts(global_df, nation_df):
     discrete_df = pd.DataFrame([], columns=headers)
     discrete_df['concept'] = concept_discrete
     discrete_df['name'] = discrete_df['concept'].str.title()
-    discrete_df['concept_type'] = ['time', 'entity_domain', 'string', 'string']
+    discrete_df['concept_type'] = ['time', 'entity_domain', 'entity_domain', 'entity_domain', 'string']
 
     continuous_df = pd.DataFrame([], columns=headers)
     continuous_df['name'] = concept_continuous
@@ -82,13 +71,23 @@ def extract_datapoints(df):
     res = {}
 
     df.columns = list(map(to_concept_id, df.columns))
+
+    if df.year.hasnans:
+        print('droping lines where year is NaN:')
+        if 'nation' in df.columns:
+            print(df[pd.isnull(df['year'])][['nation', 'year', 'version']])
+        else:
+            print(df[pd.isnull(df['year'])][['global', 'year', 'version']])
+        df = df.dropna(subset=['year']).copy()
+
     df['year'] = df['year'].apply(int)
 
     if 'nation' in df.columns:  # if it's nation data, make 'nation' as index
         df['nation'] = df['nation'].map(to_concept_id)
         df = df.set_index(['nation', 'year', 'version'])
     else:
-        df = df.set_index(['year', 'version'])
+        df['global'] = 'world'
+        df = df.set_index(['global', 'year', 'version'])
 
     for col in df.columns:
         res[col] = df[col].dropna()
@@ -98,6 +97,8 @@ def extract_datapoints(df):
 
 if __name__ == '__main__':
     import os
+
+    cleanup(out_dir)
 
     print('reading source files...')
     global_files = [x for x in os.listdir(source_dir) if x.startswith('global')]
@@ -118,16 +119,26 @@ if __name__ == '__main__':
     path = os.path.join(out_dir, 'ddf--entities--nation.csv')
     nation.to_csv(path, index=False)
 
+    global_ent = pd.DataFrame([['world', 'World']], columns=['global', 'name'])
+    global_ent.to_csv(os.path.join(out_dir, 'ddf--entities--global.csv'), index=False)
+
+    versions = np.unique(np.r_[global_df.version, nation_df.version])
+    versions_df = pd.DataFrame(versions, columns=['version'])
+    versions_df['name'] = versions_df.version
+    versions_df.to_csv(os.path.join(out_dir, 'ddf--entities--version.csv'), index=False)
+
     print('creating data points files...')
     for c, df in extract_datapoints(global_df).items():
-        path = os.path.join(out_dir, 'ddf--datapoints--'+c+'--by--year.csv')
+        path = os.path.join(out_dir, 'ddf--datapoints--'+c+'--by--global--version--year.csv')
         df = df.map(format_float_sigfig)
         df.to_csv(path, header=True)
 
     for c, df in extract_datapoints(nation_df).items():
-        path = os.path.join(out_dir, 'ddf--datapoints--'+c+'--by--nation--year.csv')
+        path = os.path.join(out_dir, 'ddf--datapoints--'+c+'--by--nation--version--year.csv')
         df = df.map(format_float_sigfig)
         df.to_csv(path, header=True)
 
     print('creating index file...')
     create_index_file(out_dir)
+
+    print('Done!')
