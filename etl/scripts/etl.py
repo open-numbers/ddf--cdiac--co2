@@ -33,7 +33,15 @@ def concat_data(files, skip=0, **kwargs):
         df = df.ix[skip:]  # skip first few rows of data
         res.append(df)
 
-    return pd.concat(res)
+    df_all = pd.concat(res)
+    if df_all.year.hasnans:
+        print('droping lines where year is NaN:')
+        if 'nation' in df_all.columns:
+            print(df_all[pd.isnull(df_all['year'])][['nation', 'year', 'version']])
+        else:
+            print(df_all[pd.isnull(df_all['year'])][['global', 'year', 'version']])
+        df_all = df_all.dropna(subset=['year']).copy()
+    return df_all
 
 
 def extract_concepts(global_df, nation_df):
@@ -71,15 +79,6 @@ def extract_datapoints(df):
     res = {}
 
     df.columns = list(map(to_concept_id, df.columns))
-
-    if df.year.hasnans:
-        print('droping lines where year is NaN:')
-        if 'nation' in df.columns:
-            print(df[pd.isnull(df['year'])][['nation', 'year', 'version']])
-        else:
-            print(df[pd.isnull(df['year'])][['global', 'year', 'version']])
-        df = df.dropna(subset=['year']).copy()
-
     df['year'] = df['year'].apply(int)
 
     if 'nation' in df.columns:  # if it's nation data, make 'nation' as index
