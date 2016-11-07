@@ -4,14 +4,33 @@ data source: http://cdiac.ornl.gov/ftp/ndp030/CSV-FILES/
 
 ## Issue
 
-For now, we made the concepts extracted from nation file and global file independent.
-In fact, some of the concepts, for example `Total carbon emissions from fossil-fuels (million metric tons of C)` 
-from global file and `Total CO2 emissions from fossil-fuels (thousand metric tons of C)`
-from nation file are same concept but with a different scale.
+- Negative values found in data. 
 
-Note: One ton of carbon equals 44/12 = 11/3 = 3.67 tons of carbon dioxide
+## Impletmentation Notes
 
-We keep it as it is for now. We will probably come back to solve this nicer, harmonize it.
+From [global ems file](http://cdiac.ornl.gov/ftp/ndp030/global.1751_2013.ems)
+and [nation ems file](http://cdiac.ornl.gov/ftp/ndp030/nation.1751_2013.ems),
+we know that:
+
+for national data:
+
+> All emission estimates are expressed in thousand metric tons of carbon.
+
+for global data:
+
+> All emission estimates are expressed in million metric tons of carbon.
+
+except for per capita data, it's same in both file:
+
+> Per capita emission estimates are expressed in metric tons of carbon.
+
+Because concepts from nation file and global file are mostly the same but with different
+scales, we unify them by multiplying global data by 1000, so they both have same units. 
+(Except for per capita data, we don't change the values in both files)
+
+## Note on C and CO2
+
+One ton of carbon equals 44/12 = 11/3 = 3.667 tons of carbon dioxide
 
 ## Reference
 

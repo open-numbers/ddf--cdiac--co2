@@ -1,6 +1,0 @@
-concept,name,concept_type
-year,Year,time
-nation,Nation,entity_domain
-global,Global,entity_domain
-version,Version,entity_domain
-name,Name,string
