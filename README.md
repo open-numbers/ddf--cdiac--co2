@@ -6,7 +6,7 @@ data source: http://cdiac.ornl.gov/ftp/ndp030/CSV-FILES/
 
 - Negative values found in data. 
 
-## Impletmentation Notes
+## Implementation Notes
 
 From [global ems file](http://cdiac.ornl.gov/ftp/ndp030/global.1751_2013.ems)
 and [nation ems file](http://cdiac.ornl.gov/ftp/ndp030/nation.1751_2013.ems),
