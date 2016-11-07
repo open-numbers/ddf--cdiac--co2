@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 """transform the CDIAC CO2 data set to DDF model"""
 
+### TODO: outdated and needs update.
+
 import pandas as pd
 import numpy as np
 import re
@@ -21,10 +23,6 @@ def concat_data(files, skip=0, **kwargs):
     for x in files:
         path = os.path.join(source_dir, x)
         df = pd.read_csv(path, **kwargs)
-        # adding a new key to show which file is the data from.
-        ver = x.split('.')[1]  # 'global.1975_2008.csv' => '1975_2008'
-        df['version'] = ver
-
         # quick fix for malformed csv downloaded from data povider
         if df.columns[0] == 'Year"':
             df = df.rename(columns={'Year"': 'Year'})
@@ -37,11 +35,30 @@ def concat_data(files, skip=0, **kwargs):
     if df_all.year.hasnans:
         print('droping lines where year is NaN:')
         if 'nation' in df_all.columns:
-            print(df_all[pd.isnull(df_all['year'])][['nation', 'year', 'version']])
+            print(df_all[pd.isnull(df_all['year'])][['nation', 'year']])
         else:
-            print(df_all[pd.isnull(df_all['year'])][['global', 'year', 'version']])
+            print(df_all[pd.isnull(df_all['year'])][['global', 'year']])
         df_all = df_all.dropna(subset=['year']).copy()
     return df_all
+
+
+def get_concept_name(name):
+    """return concept name for given indicator name.
+    """
+
+    print(name)
+    if 'total emissions' in name.lower():
+        return 'total_carbon_emissions'
+    else:
+        subtypes = [
+            'gas fuel consumption', 'liquid fuel consumption', 'solid fuel consumption',
+            'cement production', 'gas flaring', 'bunker fuels', 'per capita'
+        ]
+        for i in subtypes:
+            if i in name.lower():
+                return 'carbon_emissions_'+to_concept_id(i)
+        # if nothing found, it should be a non measure concept.
+        return to_concept_id(name)
 
 
 def extract_concepts(global_df, nation_df):
@@ -54,7 +71,7 @@ def extract_concepts(global_df, nation_df):
     headers = ['concept', 'name', 'concept_type']
 
     # define discrete and continuous concepts
-    concept_discrete = ['year', 'nation', 'global', 'version', 'name']
+    concept_discrete = ['year', 'nation', 'global', 'name']
 
     cols = np.r_[global_df.columns, nation_df.columns]
     concept_continuous = [x for x in cols if x not in concept_discrete]
@@ -63,12 +80,13 @@ def extract_concepts(global_df, nation_df):
     discrete_df = pd.DataFrame([], columns=headers)
     discrete_df['concept'] = concept_discrete
     discrete_df['name'] = discrete_df['concept'].str.title()
-    discrete_df['concept_type'] = ['time', 'entity_domain', 'entity_domain', 'entity_domain', 'string']
+    discrete_df['concept_type'] = ['time', 'entity_domain', 'entity_domain', 'string']
 
     continuous_df = pd.DataFrame([], columns=headers)
     continuous_df['name'] = concept_continuous
     continuous_df['concept_type'] = 'measure'
-    continuous_df['concept'] = continuous_df['name'].apply(to_concept_id)
+    continuous_df['concept'] = continuous_df['name'].apply(get_concept_name)
+    coutinuous_df = continuous_df.drop_duplicates(subset='concept')
 
     return (discrete_df, continuous_df)
 
@@ -78,15 +96,15 @@ def extract_datapoints(df):
 
     res = {}
 
-    df.columns = list(map(to_concept_id, df.columns))
+    df.columns = list(map(get_concept_name, df.columns))
     df['year'] = df['year'].apply(int)
 
     if 'nation' in df.columns:  # if it's nation data, make 'nation' as index
         df['nation'] = df['nation'].map(to_concept_id)
-        df = df.set_index(['nation', 'year', 'version'])
+        df = df.set_index(['nation', 'year'])
     else:
         df['global'] = 'world'
-        df = df.set_index(['global', 'year', 'version'])
+        df = df.set_index(['global', 'year'])
 
     for col in df.columns:
         res[col] = df[col].dropna()
@@ -120,11 +138,6 @@ if __name__ == '__main__':
 
     global_ent = pd.DataFrame([['world', 'World']], columns=['global', 'name'])
     global_ent.to_csv(os.path.join(out_dir, 'ddf--entities--global.csv'), index=False)
-
-    versions = np.unique(np.r_[global_df.version, nation_df.version])
-    versions_df = pd.DataFrame(versions, columns=['version'])
-    versions_df['name'] = versions_df.version
-    versions_df.to_csv(os.path.join(out_dir, 'ddf--entities--version.csv'), index=False)
 
     print('creating data points files...')
     for c, df in extract_datapoints(global_df).items():
