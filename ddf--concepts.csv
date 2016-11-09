@@ -1,15 +1,15 @@
 concept,name,concept_type,unit,description
-global,Global,entity_domain,,
 nation,Nation,entity_domain,,
-carbon_emissions_gas_fuel_consumption,Carbon Emissions From Gas Fuel Consumption,measure,thousand metric tons,
-carbon_emissions_per_capita,Carbon Emissions From Per Capita,measure,metric tonnes per person,
-carbon_emissions_solid_fuel_consumption,Carbon Emissions From Solid Fuel Consumption,measure,thousand metric tons,
+global,Global,entity_domain,,
 carbon_emissions_liquid_fuel_consumption,Carbon Emissions From Liquid Fuel Consumption,measure,thousand metric tons,
-total_carbon_emissions,Total Carbon Emissions,measure,thousand metric tons,"Sum of fossil fuel consumption, cement production and gas flaring emissions"
 carbon_emissions_gas_flaring,Carbon Emissions From Gas Flaring,measure,thousand metric tons,
+carbon_emissions_gas_fuel_consumption,Carbon Emissions From Gas Fuel Consumption,measure,thousand metric tons,
+carbon_emissions_solid_fuel_consumption,Carbon Emissions From Solid Fuel Consumption,measure,thousand metric tons,
 carbon_emissions_cement_production,Carbon Emissions From Cement Production,measure,thousand metric tons,
 carbon_emissions_bunker_fuels,Carbon Emissions From Bunker Fuels,measure,thousand metric tons,
-description,Description,string,,
-unit,Unit,string,,
+total_carbon_emissions,Total Carbon Emissions,measure,thousand metric tons,"Sum of fossil fuel consumption, cement production and gas flaring emissions"
+carbon_emissions_per_capita,Carbon Emissions From Per Capita,measure,metric tonnes per person,
 name,Name,string,,
+unit,Unit,string,,
+description,Description,string,,
 year,Year,time,,
