@@ -1,53 +1,33 @@
 # -*- coding: utf-8 -*-
 """transform the CDIAC CO2 data set to DDF model"""
 
-### TODO: outdated and needs update.
-
+import os
 import pandas as pd
 import numpy as np
-import re
-from ddf_utils.index import create_index_file
-from ddf_utils.str import to_concept_id, format_float_sigfig
+from ddf_utils.str import to_concept_id, format_float_digits
 from ddf_utils.io import cleanup
 
 # configuration of file path
-source_dir = '../source/'
+nation_file = '../source/nation.1751_2013.csv'
+global_file = '../source/global.1751_2013.csv'
 out_dir = '../../'
 
 
-def concat_data(files, skip=0, **kwargs):
-    """concatenate a list of data from source and return one dataframe.
-    Additional keyword arguments will be passed to pandas read_csv function.
-    """
-    res = []
-    for x in files:
-        path = os.path.join(source_dir, x)
-        df = pd.read_csv(path, **kwargs)
-        # quick fix for malformed csv downloaded from data povider
-        if df.columns[0] == 'Year"':
-            df = df.rename(columns={'Year"': 'Year'})
-        df.columns = list(map(lambda x: x.lower().replace('\n', ''), df.columns))
+def read_source(f, skip=0, **kwargs):
+    df = pd.read_csv(f, **kwargs)
+    # quick fix for malformed csv downloaded from data povider
+    if df.columns[0] == 'Year"':
+        df = df.rename(columns={'Year"': 'Year'})
+    df.columns = list(map(lambda x: x.lower().replace('\n', ''), df.columns))
+    df = df.iloc[skip:]  # skip first few rows of data
 
-        df = df.ix[skip:]  # skip first few rows of data
-        res.append(df)
-
-    df_all = pd.concat(res)
-    if df_all.year.hasnans:
-        print('droping lines where year is NaN:')
-        if 'nation' in df_all.columns:
-            print(df_all[pd.isnull(df_all['year'])][['nation', 'year']])
-        else:
-            print(df_all[pd.isnull(df_all['year'])][['global', 'year']])
-        df_all = df_all.dropna(subset=['year']).copy()
-    return df_all
+    return df
 
 
-def get_concept_name(name):
+def get_concept_id(name):
     """return concept name for given indicator name.
     """
-
-    print(name)
-    if 'total emissions' in name.lower():
+    if 'total ' in name.lower():
         return 'total_carbon_emissions'
     else:
         subtypes = [
@@ -61,96 +41,111 @@ def get_concept_name(name):
         return to_concept_id(name)
 
 
-def extract_concepts(global_df, nation_df):
-    """extract both discrete and continuous concepts from concatenated data
-    returns a tuple of concepts dataframe, one is discrete and the other
-    is continuous.
-    """
-
-    # headers for dataframe and csv exports
-    headers = ['concept', 'name', 'concept_type']
-
-    # define discrete and continuous concepts
-    concept_discrete = ['year', 'nation', 'global', 'name']
-
-    cols = np.r_[global_df.columns, nation_df.columns]
-    concept_continuous = [x for x in cols if x not in concept_discrete]
-
-    # build dataframe
-    discrete_df = pd.DataFrame([], columns=headers)
-    discrete_df['concept'] = concept_discrete
-    discrete_df['name'] = discrete_df['concept'].str.title()
-    discrete_df['concept_type'] = ['time', 'entity_domain', 'entity_domain', 'string']
-
-    continuous_df = pd.DataFrame([], columns=headers)
-    continuous_df['name'] = concept_continuous
-    continuous_df['concept_type'] = 'measure'
-    continuous_df['concept'] = continuous_df['name'].apply(get_concept_name)
-    coutinuous_df = continuous_df.drop_duplicates(subset='concept')
-
-    return (discrete_df, continuous_df)
-
-
-def extract_datapoints(df):
-    """extract data points from concatenated data"""
-
-    res = {}
-
-    df.columns = list(map(get_concept_name, df.columns))
-    df['year'] = df['year'].apply(int)
-
-    if 'nation' in df.columns:  # if it's nation data, make 'nation' as index
-        df['nation'] = df['nation'].map(to_concept_id)
-        df = df.set_index(['nation', 'year'])
+def get_concept_name(concept):
+    if concept.startswith('carbon_emissions'):
+        n0 = 'Carbon Emissions'
+        n1 = concept.replace('carbon_emissions_', '').replace('_', ' ').title()
+        return n0 + ' From ' + n1
     else:
-        df['global'] = 'world'
-        df = df.set_index(['global', 'year'])
-
-    for col in df.columns:
-        res[col] = df[col].dropna()
-
-    return res
+        return concept.replace('_', ' ').title()
 
 
 if __name__ == '__main__':
-    import os
 
+    # cleanup the output dir
     cleanup(out_dir)
 
-    print('reading source files...')
-    global_files = [x for x in os.listdir(source_dir) if x.startswith('global')]
-    nation_files = [x for x in os.listdir(source_dir) if x.startswith('nation')]
+    print("generating dataset...")
 
-    global_df = concat_data(global_files, skip=1)
-    nation_df = concat_data(nation_files, skip=2, na_values='.')
+    # read source data
+    nation_data = read_source(nation_file, skip=3, na_values='.')
+    global_data = read_source(global_file, skip=1, na_values='.')
 
-    print('creating concepts files...')
-    discrete_df, continuous_df = extract_concepts(global_df, nation_df)
-    discrete_df.to_csv(os.path.join(out_dir, 'ddf--concepts--discrete.csv'), index=False)
-    continuous_df.to_csv(os.path.join(out_dir, 'ddf--concepts--continuous.csv'), index=False)
+    # fix year to int
+    nation_data.year = nation_data.year.map(int)
+    global_data.year = global_data.year.map(int)
 
-    print('creating entities files...')
-    nation = nation_df[['nation']].drop_duplicates()
-    nation['nation_id'] = nation['nation'].map(to_concept_id)
-    nation.columns = ['name', 'nation']
-    path = os.path.join(out_dir, 'ddf--entities--nation.csv')
-    nation.to_csv(path, index=False)
+    # fix nation name for hkg and mac. There is a typo in it.
+    nation_data['nation'] = nation_data['nation'].map(
+            lambda x: x.replace('ADMINSTRATIVE', 'ADMINISTRATIVE') if 'ADMINSTRATIVE' in x else x)
+
+    # Concept Table
+    concept_discrete = ['year', 'nation', 'global', 'name', 'unit', 'description']
+    concept_all = np.r_[concept_discrete, list(map(get_concept_id, global_data.columns)),
+                        list(map(get_concept_id, nation_data.columns))]
+    concept_all = list(set(concept_all))
+
+    cdf = pd.DataFrame(concept_all, columns=['concept'])
+    cdf['name'] = cdf.concept.map(get_concept_name)
+
+    # filling concept_type and unit
+    cdf['concept_type'] = cdf.concept.map(lambda x: 'measure' if 'carbon' in x else 'string')
+    cdf['unit'] = cdf.concept.map(lambda x: 'thousand metric tons' if 'carbon' in x else np.nan)
+
+    # manually set some properties
+    cdf = cdf.set_index('concept')
+    cdf.loc[['global', 'nation'], 'concept_type'] = 'entity_domain'
+
+    cdf.loc['total_carbon_emissions', 'description'] = \
+        'Sum of fossil fuel consumption, cement production and gas flaring emissions'
+    cdf.loc['carbon_emissions_per_capita', 'unit'] = 'metric tonnes per person'
+    cdf.loc['year', 'concept_type'] = 'time'
+
+    cdf = cdf.reset_index()
+    cdf = cdf.sort_values(by='concept_type')
+
+    cdf.to_csv(os.path.join(out_dir, 'ddf--concepts.csv'), index=False)
+
+    # Entities Tables
+    nations_df = pd.DataFrame([nation_data.nation.map(to_concept_id).unique(),
+                               nation_data.nation.unique()])
+
+    nations_df = nations_df.T
+    nations_df.columns = ['nation', 'name']
+
+    nations_df.to_csv(os.path.join(out_dir, 'ddf--entities--nation.csv'), index=False)
 
     global_ent = pd.DataFrame([['world', 'World']], columns=['global', 'name'])
     global_ent.to_csv(os.path.join(out_dir, 'ddf--entities--global.csv'), index=False)
 
-    print('creating data points files...')
-    for c, df in extract_datapoints(global_df).items():
-        path = os.path.join(out_dir, 'ddf--datapoints--'+c+'--by--global--version--year.csv')
-        df = df.map(format_float_sigfig)
-        df.to_csv(path, header=True)
+    # Datapoint Tables
+    nation_data.columns = list(map(get_concept_id, nation_data.columns))
+    nation_data.nation = nation_data.nation.map(to_concept_id)
 
-    for c, df in extract_datapoints(nation_df).items():
-        path = os.path.join(out_dir, 'ddf--datapoints--'+c+'--by--nation--version--year.csv')
-        df = df.map(format_float_sigfig)
-        df.to_csv(path, header=True)
+    ndf = nation_data.set_index(['nation', 'year']).copy()
 
-    print('creating index file...')
-    create_index_file(out_dir)
+    for col in ndf:
+        # ndf[col] = ndf[col].map(format_float_digits)
+        (ndf[col]
+         .dropna()
+         .to_csv(os.path.join(out_dir,
+                              'ddf--datapoints--{}--by--nation--year.csv'.format(col)),
+                 header=True))
 
-    print('Done!')
+    global_data.columns = list(map(get_concept_id, global_data.columns))
+    global_data['global'] = 'world'
+    global_data.year = global_data.year.map(int)
+
+    # global data is expressed in million tonnes, so we need to multiply them to make
+    # them same uint as nation data
+    gdf = global_data.set_index(['global', 'year']).copy()
+
+    for col in gdf:
+        ser = gdf[col].map(float)  # some columns not reconized as float. fix those here.
+        if 'per_capita' in col:  # don't change per capita data
+            (ser
+             .dropna()
+             .to_csv(
+                 os.path.join(out_dir,
+                              'ddf--datapoints--{}--by--global--year.csv'.format(col)),
+                 header=True))
+        else:  # multiply 1000
+            ((ser*1000)
+             .dropna()
+             .to_csv(
+                 os.path.join(out_dir,
+                              'ddf--datapoints--{}--by--global--year.csv'.format(col)),
+                 header=True))
+
+    print("dataset generated! Please run `validate-ddf -i` in the output dir to"
+          "generate datapackage.json!")
