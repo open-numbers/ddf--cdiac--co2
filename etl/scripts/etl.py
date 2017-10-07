@@ -6,10 +6,11 @@ import pandas as pd
 import numpy as np
 from ddf_utils.str import to_concept_id, format_float_digits
 from ddf_utils.io import cleanup
+from ddf_utils.datapackage import dump_json, get_datapackage
 
 # configuration of file path
-nation_file = '../source/nation.1751_2013.csv'
-global_file = '../source/global.1751_2013.csv'
+nation_file = '../source/nation.1751_2014.csv'
+global_file = '../source/global.1751_2014.csv'
 out_dir = '../../'
 
 
@@ -146,6 +147,8 @@ if __name__ == '__main__':
                  os.path.join(out_dir,
                               'ddf--datapoints--{}--by--global--year.csv'.format(col)),
                  header=True))
+
+    dump_json(os.path.join(out_dir, 'datapackage.json'), get_datapackage(out_dir, update=True))
 
     print("dataset generated! Please run `validate-ddf -i` in the output dir to"
           "generate datapackage.json!")
