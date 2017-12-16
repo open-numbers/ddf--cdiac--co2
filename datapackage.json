@@ -5,12 +5,12 @@
         "name": "English"
     },
     "author": "",
+    "created": "2017-12-15T19:02:36.089762+00:00",
     "description": "",
     "license": "",
     "title": "ddf--cdiac--co2",
     "translations": [],
-    "version": "1.0.0",
-    "created": "2017-12-15T18:52:22.660138+00:00",
+    "version": "1.2.0",
     "resources": [
         {
             "path": "ddf--datapoints--total_carbon_emissions--by--global--year.csv",
@@ -397,7 +397,7 @@
                 "primaryKey": [
                     "concept"
                 ],
-                "value": "unit",
+                "value": "concept_type",
                 "resources": [
                     "ddf--concepts"
                 ]
@@ -406,7 +406,7 @@
                 "primaryKey": [
                     "concept"
                 ],
-                "value": "concept_type",
+                "value": "unit",
                 "resources": [
                     "ddf--concepts"
                 ]

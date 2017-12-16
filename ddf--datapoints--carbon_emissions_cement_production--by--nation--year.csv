@@ -63,7 +63,8 @@ afghanistan,2009,4.0
 afghanistan,2010,5.0
 afghanistan,2011,5.0
 afghanistan,2012,5.0
-afghanistan,2013,5.0
+afghanistan,2013,7.0
+afghanistan,2014,14.0
 albania,1933,0.0
 albania,1934,0.0
 albania,1935,0.0
@@ -143,8 +144,9 @@ albania,2008,125.0
 albania,2009,151.0
 albania,2010,177.0
 albania,2011,245.0
-albania,2012,245.0
-albania,2013,245.0
+albania,2012,299.0
+albania,2013,313.0
+albania,2014,299.0
 algeria,1900,0.0
 algeria,1901,0.0
 algeria,1902,0.0
@@ -248,7 +250,13 @@ algeria,2009,2548.0
 algeria,2010,2598.0
 algeria,2011,2584.0
 algeria,2012,2584.0
-algeria,2013,2448.0
+algeria,2013,2516.0
+algeria,2014,2856.0
+andorra,1990,0.0
+andorra,1991,0.0
+andorra,1992,0.0
+andorra,1993,0.0
+andorra,1994,0.0
 andorra,1995,0.0
 andorra,1996,0.0
 andorra,1997,0.0
@@ -268,6 +276,7 @@ andorra,2010,0.0
 andorra,2011,0.0
 andorra,2012,0.0
 andorra,2013,0.0
+andorra,2014,0.0
 angola,1950,0.0
 angola,1951,0.0
 angola,1952,0.0
@@ -331,7 +340,15 @@ angola,2009,245.0
 angola,2010,204.0
 angola,2011,204.0
 angola,2012,218.0
-angola,2013,231.0
+angola,2013,272.0
+angola,2014,340.0
+anguilla,1990,0.0
+anguilla,1991,0.0
+anguilla,1992,0.0
+anguilla,1993,0.0
+anguilla,1994,0.0
+anguilla,1995,0.0
+anguilla,1996,0.0
 anguilla,1997,0.0
 anguilla,1998,0.0
 anguilla,1999,0.0
@@ -349,6 +366,7 @@ anguilla,2010,0.0
 anguilla,2011,0.0
 anguilla,2012,0.0
 anguilla,2013,0.0
+anguilla,2014,0.0
 antarctic_fisheries,1987,0.0
 antarctic_fisheries,1988,0.0
 antarctic_fisheries,1989,0.0
@@ -427,6 +445,7 @@ antigua_barbuda,2010,0.0
 antigua_barbuda,2011,0.0
 antigua_barbuda,2012,0.0
 antigua_barbuda,2013,0.0
+antigua_barbuda,2014,0.0
 argentina,1887,0.0
 argentina,1888,0.0
 argentina,1889,0.0
@@ -554,6 +573,7 @@ argentina,2010,1418.0
 argentina,2011,1577.0
 argentina,2012,1457.0
 argentina,2013,1617.0
+argentina,2014,1551.0
 armenia,1992,54.0
 armenia,1993,27.0
 armenia,1994,14.0
@@ -576,6 +596,7 @@ armenia,2010,66.0
 armenia,2011,57.0
 armenia,2012,60.0
 armenia,2013,59.0
+armenia,2014,58.0
 aruba,1986,0.0
 aruba,1987,0.0
 aruba,1988,0.0
@@ -604,6 +625,7 @@ aruba,2010,0.0
 aruba,2011,0.0
 aruba,2012,0.0
 aruba,2013,0.0
+aruba,2014,0.0
 australia,1851,0.0
 australia,1852,0.0
 australia,1853,0.0
@@ -765,8 +787,9 @@ australia,2008,1278.0
 australia,2009,1251.0
 australia,2010,1129.0
 australia,2011,1170.0
-australia,2012,1170.0
+australia,2012,1156.0
 australia,2013,1142.0
+australia,2014,1224.0
 austria,1807,0.0
 austria,1819,0.0
 austria,1820,0.0
@@ -963,6 +986,7 @@ austria,2010,579.0
 austria,2011,602.0
 austria,2012,606.0
 austria,2013,596.0
+austria,2014,598.0
 azerbaijan,1992,109.0
 azerbaijan,1993,82.0
 azerbaijan,1994,64.0
@@ -985,6 +1009,7 @@ azerbaijan,2010,174.0
 azerbaijan,2011,194.0
 azerbaijan,2012,267.0
 azerbaijan,2013,312.0
+azerbaijan,2014,390.0
 bahamas,1950,0.0
 bahamas,1951,0.0
 bahamas,1952,0.0
@@ -1049,6 +1074,7 @@ bahamas,2010,0.0
 bahamas,2011,0.0
 bahamas,2012,0.0
 bahamas,2013,0.0
+bahamas,2014,0.0
 bahrain,1933,0.0
 bahrain,1934,0.0
 bahrain,1935,0.0
@@ -1126,10 +1152,11 @@ bahrain,2006,54.0
 bahrain,2007,54.0
 bahrain,2008,60.0
 bahrain,2009,95.0
-bahrain,2010,122.0
-bahrain,2011,163.0
-bahrain,2012,177.0
-bahrain,2013,163.0
+bahrain,2010,163.0
+bahrain,2011,177.0
+bahrain,2012,184.0
+bahrain,2013,184.0
+bahrain,2014,204.0
 bangladesh,1972,3.0
 bangladesh,1973,4.0
 bangladesh,1974,12.0
@@ -1170,8 +1197,9 @@ bangladesh,2008,1360.0
 bangladesh,2009,1632.0
 bangladesh,2010,1873.0
 bangladesh,2011,1998.0
-bangladesh,2012,2040.0
-bangladesh,2013,2040.0
+bangladesh,2012,2074.0
+bangladesh,2013,2282.0
+bangladesh,2014,2312.0
 barbados,1928,0.0
 barbados,1929,0.0
 barbados,1930,0.0
@@ -1258,6 +1286,7 @@ barbados,2010,31.0
 barbados,2011,30.0
 barbados,2012,24.0
 barbados,2013,22.0
+barbados,2014,22.0
 belarus,1992,313.0
 belarus,1993,258.0
 belarus,1994,202.0
@@ -1280,6 +1309,7 @@ belarus,2010,616.0
 belarus,2011,626.0
 belarus,2012,667.0
 belarus,2013,688.0
+belarus,2014,764.0
 belgium,1802,0.0
 belgium,1830,0.0
 belgium,1831,0.0
@@ -1465,6 +1495,7 @@ belgium,2010,829.0
 belgium,2011,946.0
 belgium,2012,854.0
 belgium,2013,832.0
+belgium,2014,830.0
 belize,1950,0.0
 belize,1951,0.0
 belize,1952,0.0
@@ -1529,6 +1560,7 @@ belize,2010,0.0
 belize,2011,0.0
 belize,2012,0.0
 belize,2013,0.0
+belize,2014,0.0
 benin,1958,0.0
 benin,1959,0.0
 benin,1960,0.0
@@ -1585,6 +1617,7 @@ benin,2010,177.0
 benin,2011,199.0
 benin,2012,189.0
 benin,2013,193.0
+benin,2014,190.0
 bermuda,1950,0.0
 bermuda,1951,0.0
 bermuda,1952,0.0
@@ -1649,6 +1682,7 @@ bermuda,2010,0.0
 bermuda,2011,0.0
 bermuda,2012,0.0
 bermuda,2013,0.0
+bermuda,2014,0.0
 bhutan,1970,0.0
 bhutan,1971,0.0
 bhutan,1972,0.0
@@ -1692,9 +1726,11 @@ bhutan,2009,24.0
 bhutan,2010,27.0
 bhutan,2011,74.0
 bhutan,2012,71.0
-bhutan,2013,68.0
+bhutan,2013,78.0
+bhutan,2014,94.0
 bonaire_saint_eustatius_and_saba,2012,0.0
 bonaire_saint_eustatius_and_saba,2013,0.0
+bonaire_saint_eustatius_and_saba,2014,0.0
 bosnia_herzegovina,1992,20.0
 bosnia_herzegovina,1993,20.0
 bosnia_herzegovina,1994,33.0
@@ -1717,6 +1753,7 @@ bosnia_herzegovina,2010,129.0
 bosnia_herzegovina,2011,121.0
 bosnia_herzegovina,2012,115.0
 bosnia_herzegovina,2013,120.0
+bosnia_herzegovina,2014,114.0
 botswana,1972,0.0
 botswana,1973,0.0
 botswana,1974,0.0
@@ -1756,9 +1793,10 @@ botswana,2007,0.0
 botswana,2008,0.0
 botswana,2009,0.0
 botswana,2010,35.0
-botswana,2011,0.0
-botswana,2012,35.0
-botswana,2013,35.0
+botswana,2011,41.0
+botswana,2012,50.0
+botswana,2013,50.0
+botswana,2014,50.0
 brazil,1901,0.0
 brazil,1902,0.0
 brazil,1903,0.0
@@ -1872,6 +1910,7 @@ brazil,2010,8040.0
 brazil,2011,8717.0
 brazil,2012,9428.0
 brazil,2013,9517.0
+brazil,2014,9691.0
 british_virgin_islands,1962,0.0
 british_virgin_islands,1963,0.0
 british_virgin_islands,1964,0.0
@@ -1924,6 +1963,7 @@ british_virgin_islands,2010,0.0
 british_virgin_islands,2011,0.0
 british_virgin_islands,2012,0.0
 british_virgin_islands,2013,0.0
+british_virgin_islands,2014,0.0
 brunei_darussalam,1930,0.0
 brunei_darussalam,1931,0.0
 brunei_darussalam,1932,0.0
@@ -2006,8 +2046,9 @@ brunei_darussalam,2008,33.0
 brunei_darussalam,2009,30.0
 brunei_darussalam,2010,37.0
 brunei_darussalam,2011,39.0
-brunei_darussalam,2012,41.0
-brunei_darussalam,2013,41.0
+brunei_darussalam,2012,45.0
+brunei_darussalam,2013,46.0
+brunei_darussalam,2014,48.0
 bulgaria,1879,0.0
 bulgaria,1880,0.0
 bulgaria,1881,0.0
@@ -2141,8 +2182,9 @@ bulgaria,2008,633.0
 bulgaria,2009,360.0
 bulgaria,2010,267.0
 bulgaria,2011,254.0
-bulgaria,2012,245.0
-bulgaria,2013,245.0
+bulgaria,2012,203.0
+bulgaria,2013,246.0
+bulgaria,2014,252.0
 burkina_faso,1958,0.0
 burkina_faso,1959,0.0
 burkina_faso,1960,0.0
@@ -2199,6 +2241,7 @@ burkina_faso,2010,80.0
 burkina_faso,2011,80.0
 burkina_faso,2012,90.0
 burkina_faso,2013,79.0
+burkina_faso,2014,55.0
 burundi,1962,0.0
 burundi,1963,0.0
 burundi,1964,0.0
@@ -2251,6 +2294,7 @@ burundi,2010,0.0
 burundi,2011,5.0
 burundi,2012,10.0
 burundi,2013,14.0
+burundi,2014,10.0
 cambodia,1955,0.0
 cambodia,1956,0.0
 cambodia,1957,0.0
@@ -2309,7 +2353,8 @@ cambodia,2009,127.0
 cambodia,2010,107.0
 cambodia,2011,123.0
 cambodia,2012,133.0
-cambodia,2013,136.0
+cambodia,2013,144.0
+cambodia,2014,190.0
 canada,1785,0.0
 canada,1786,0.0
 canada,1787,0.0
@@ -2539,6 +2584,7 @@ canada,2010,1691.0
 canada,2011,1632.0
 canada,2012,1695.0
 canada,2013,1579.0
+canada,2014,1616.0
 cape_verde,1950,0.0
 cape_verde,1951,0.0
 cape_verde,1952,0.0
@@ -2603,6 +2649,7 @@ cape_verde,2010,0.0
 cape_verde,2011,0.0
 cape_verde,2012,0.0
 cape_verde,2013,0.0
+cape_verde,2014,0.0
 cayman_islands,1956,0.0
 cayman_islands,1957,0.0
 cayman_islands,1958,0.0
@@ -2661,6 +2708,7 @@ cayman_islands,2010,0.0
 cayman_islands,2011,0.0
 cayman_islands,2012,0.0
 cayman_islands,2013,0.0
+cayman_islands,2014,0.0
 central_african_republic,1959,0.0
 central_african_republic,1960,0.0
 central_african_republic,1961,0.0
@@ -2716,6 +2764,7 @@ central_african_republic,2010,0.0
 central_african_republic,2011,0.0
 central_african_republic,2012,0.0
 central_african_republic,2013,0.0
+central_african_republic,2014,0.0
 chad,1959,0.0
 chad,1960,0.0
 chad,1961,0.0
@@ -2769,8 +2818,9 @@ chad,2008,0.0
 chad,2009,0.0
 chad,2010,0.0
 chad,2011,0.0
-chad,2012,0.0
-chad,2013,0.0
+chad,2012,19.0
+chad,2013,24.0
+chad,2014,27.0
 chile,1895,0.0
 chile,1896,0.0
 chile,1897,0.0
@@ -2889,7 +2939,8 @@ chile,2009,527.0
 chile,2010,526.0
 chile,2011,599.0
 chile,2012,642.0
-chile,2013,653.0
+chile,2013,664.0
+chile,2014,680.0
 china_mainland,1899,0.0
 china_mainland,1902,0.0
 china_mainland,1903,0.0
@@ -3002,7 +3053,8 @@ china_mainland,2009,223584.0
 china_mainland,2010,247792.0
 china_mainland,2011,285464.0
 china_mainland,2012,300560.0
-china_mainland,2013,328576.0
+china_mainland,2013,327896.0
+china_mainland,2014,338912.0
 christmas_island,1970,0.0
 christmas_island,1971,0.0
 christmas_island,1972,0.0
@@ -3106,10 +3158,11 @@ colombia,2006,1365.0
 colombia,2007,1505.0
 colombia,2008,1422.0
 colombia,2009,1256.0
-colombia,2010,1290.0
+colombia,2010,1293.0
 colombia,2011,1466.0
 colombia,2012,1486.0
 colombia,2013,1530.0
+colombia,2014,1684.0
 comoros,1959,0.0
 comoros,1960,0.0
 comoros,1961,0.0
@@ -3165,6 +3218,7 @@ comoros,2010,0.0
 comoros,2011,0.0
 comoros,2012,0.0
 comoros,2013,0.0
+comoros,2014,0.0
 congo,1959,0.0
 congo,1960,0.0
 congo,1961,0.0
@@ -3219,7 +3273,8 @@ congo,2009,15.0
 congo,2010,11.0
 congo,2011,10.0
 congo,2012,20.0
-congo,2013,23.0
+congo,2013,34.0
+congo,2014,63.0
 cook_islands,1969,0.0
 cook_islands,1970,0.0
 cook_islands,1971,0.0
@@ -3265,6 +3320,7 @@ cook_islands,2010,0.0
 cook_islands,2011,0.0
 cook_islands,2012,0.0
 cook_islands,2013,0.0
+cook_islands,2014,0.0
 costa_rica,1950,0.0
 costa_rica,1951,0.0
 costa_rica,1952,0.0
@@ -3328,7 +3384,8 @@ costa_rica,2009,286.0
 costa_rica,2010,174.0
 costa_rica,2011,190.0
 costa_rica,2012,190.0
-costa_rica,2013,204.0
+costa_rica,2013,199.0
+costa_rica,2014,204.0
 cote_d_ivoire,1958,0.0
 cote_d_ivoire,1959,0.0
 cote_d_ivoire,1960,0.0
@@ -3381,10 +3438,11 @@ cote_d_ivoire,2006,49.0
 cote_d_ivoire,2007,64.0
 cote_d_ivoire,2008,49.0
 cote_d_ivoire,2009,38.0
-cote_d_ivoire,2010,26.0
-cote_d_ivoire,2011,13.0
-cote_d_ivoire,2012,11.0
-cote_d_ivoire,2013,14.0
+cote_d_ivoire,2010,245.0
+cote_d_ivoire,2011,245.0
+cote_d_ivoire,2012,258.0
+cote_d_ivoire,2013,313.0
+cote_d_ivoire,2014,354.0
 croatia,1992,240.0
 croatia,1993,229.0
 croatia,1994,279.0
@@ -3403,10 +3461,11 @@ croatia,2006,489.0
 croatia,2007,488.0
 croatia,2008,463.0
 croatia,2009,397.0
-croatia,2010,377.0
-croatia,2011,365.0
-croatia,2012,307.0
-croatia,2013,331.0
+croatia,2010,338.0
+croatia,2011,336.0
+croatia,2012,293.0
+croatia,2013,317.0
+croatia,2014,319.0
 cuba,1941,21.0
 cuba,1942,23.0
 cuba,1943,23.0
@@ -3480,8 +3539,10 @@ cuba,2010,222.0
 cuba,2011,236.0
 cuba,2012,248.0
 cuba,2013,226.0
+cuba,2014,215.0
 curacao,2012,0.0
 curacao,2013,0.0
+curacao,2014,0.0
 cyprus,1950,0.0
 cyprus,1951,0.0
 cyprus,1952,0.0
@@ -3546,6 +3607,7 @@ cyprus,2010,181.0
 cyprus,2011,164.0
 cyprus,2012,140.0
 cyprus,2013,116.0
+cyprus,2014,100.0
 czech_republic,1992,816.0
 czech_republic,1993,733.0
 czech_republic,1994,721.0
@@ -3568,6 +3630,7 @@ czech_republic,2010,460.0
 czech_republic,2011,535.0
 czech_republic,2012,467.0
 czech_republic,2013,437.0
+czech_republic,2014,502.0
 czechoslovakia,1860,0.0
 czechoslovakia,1861,0.0
 czechoslovakia,1862,0.0
@@ -3765,10 +3828,11 @@ democratic_people_s_republic_of_korea,2006,838.0
 democratic_people_s_republic_of_korea,2007,834.0
 democratic_people_s_republic_of_korea,2008,872.0
 democratic_people_s_republic_of_korea,2009,870.0
-democratic_people_s_republic_of_korea,2010,870.0
-democratic_people_s_republic_of_korea,2011,884.0
-democratic_people_s_republic_of_korea,2012,898.0
+democratic_people_s_republic_of_korea,2010,830.0
+democratic_people_s_republic_of_korea,2011,857.0
+democratic_people_s_republic_of_korea,2012,884.0
 democratic_people_s_republic_of_korea,2013,966.0
+democratic_people_s_republic_of_korea,2014,979.0
 democratic_republic_of_the_congo_formerly_zaire,1920,0.0
 democratic_republic_of_the_congo_formerly_zaire,1921,0.0
 democratic_republic_of_the_congo_formerly_zaire,1922,0.0
@@ -3863,6 +3927,7 @@ democratic_republic_of_the_congo_formerly_zaire,2010,67.0
 democratic_republic_of_the_congo_formerly_zaire,2011,62.0
 democratic_republic_of_the_congo_formerly_zaire,2012,56.0
 democratic_republic_of_the_congo_formerly_zaire,2013,61.0
+democratic_republic_of_the_congo_formerly_zaire,2014,45.0
 democratic_republic_of_vietnam,1955,0.0
 democratic_republic_of_vietnam,1956,27.0
 democratic_republic_of_vietnam,1957,22.0
@@ -4049,6 +4114,7 @@ denmark,2010,211.0
 denmark,2011,246.0
 denmark,2012,245.0
 denmark,2013,249.0
+denmark,2014,255.0
 djibouti,1950,0.0
 djibouti,1951,0.0
 djibouti,1952,0.0
@@ -4113,6 +4179,7 @@ djibouti,2010,0.0
 djibouti,2011,0.0
 djibouti,2012,0.0
 djibouti,2013,20.0
+djibouti,2014,48.0
 dominica,1951,0.0
 dominica,1952,0.0
 dominica,1953,0.0
@@ -4176,6 +4243,7 @@ dominica,2010,0.0
 dominica,2011,0.0
 dominica,2012,0.0
 dominica,2013,0.0
+dominica,2014,0.0
 dominican_republic,1947,2.0
 dominican_republic,1948,6.0
 dominican_republic,1949,7.0
@@ -4242,7 +4310,8 @@ dominican_republic,2009,524.0
 dominican_republic,2010,558.0
 dominican_republic,2011,544.0
 dominican_republic,2012,562.0
-dominican_republic,2013,585.0
+dominican_republic,2013,577.0
+dominican_republic,2014,653.0
 east_west_pakistan,1946,0.0
 east_west_pakistan,1947,0.0
 east_west_pakistan,1948,45.0
@@ -4365,7 +4434,8 @@ ecuador,2009,722.0
 ecuador,2010,719.0
 ecuador,2011,776.0
 ecuador,2012,819.0
-ecuador,2013,898.0
+ecuador,2013,907.0
+ecuador,2014,898.0
 egypt,1911,0.0
 egypt,1912,0.0
 egypt,1913,0.0
@@ -4469,6 +4539,7 @@ egypt,2010,6065.0
 egypt,2011,5900.0
 egypt,2012,7507.0
 egypt,2013,6800.0
+egypt,2014,6664.0
 el_salvador,1950,0.0
 el_salvador,1951,0.0
 el_salvador,1952,0.0
@@ -4532,7 +4603,8 @@ el_salvador,2009,165.0
 el_salvador,2010,175.0
 el_salvador,2011,180.0
 el_salvador,2012,188.0
-el_salvador,2013,190.0
+el_salvador,2013,163.0
+el_salvador,2014,136.0
 equatorial_guinea,1950,0.0
 equatorial_guinea,1951,0.0
 equatorial_guinea,1952,0.0
@@ -4597,6 +4669,7 @@ equatorial_guinea,2010,0.0
 equatorial_guinea,2011,0.0
 equatorial_guinea,2012,0.0
 equatorial_guinea,2013,0.0
+equatorial_guinea,2014,0.0
 eritrea,1939,4.0
 eritrea,1940,2.0
 eritrea,1941,1.0
@@ -4623,6 +4696,7 @@ eritrea,2010,6.0
 eritrea,2011,26.0
 eritrea,2012,35.0
 eritrea,2013,35.0
+eritrea,2014,41.0
 estonia,1928,9.0
 estonia,1929,8.0
 estonia,1930,6.0
@@ -4656,7 +4730,8 @@ estonia,2009,44.0
 estonia,2010,51.0
 estonia,2011,61.0
 estonia,2012,66.0
-estonia,2013,68.0
+estonia,2013,62.0
+estonia,2014,61.0
 ethiopia,1941,3.0
 ethiopia,1942,3.0
 ethiopia,1943,3.0
@@ -4726,6 +4801,7 @@ ethiopia,2010,223.0
 ethiopia,2011,283.0
 ethiopia,2012,476.0
 ethiopia,2013,680.0
+ethiopia,2014,734.0
 faeroe_islands,1950,0.0
 faeroe_islands,1951,0.0
 faeroe_islands,1952,0.0
@@ -4790,6 +4866,7 @@ faeroe_islands,2010,0.0
 faeroe_islands,2011,0.0
 faeroe_islands,2012,0.0
 faeroe_islands,2013,0.0
+faeroe_islands,2014,0.0
 falkland_islands_malvinas,1950,0.0
 falkland_islands_malvinas,1951,0.0
 falkland_islands_malvinas,1952,0.0
@@ -4852,6 +4929,7 @@ falkland_islands_malvinas,2010,0.0
 falkland_islands_malvinas,2011,0.0
 falkland_islands_malvinas,2012,0.0
 falkland_islands_malvinas,2013,0.0
+falkland_islands_malvinas,2014,0.0
 federal_republic_of_germany,1945,0.0
 federal_republic_of_germany,1946,0.0
 federal_republic_of_germany,1947,0.0
@@ -4898,6 +4976,11 @@ federal_republic_of_germany,1987,3436.0
 federal_republic_of_germany,1988,3565.0
 federal_republic_of_germany,1989,3876.0
 federal_republic_of_germany,1990,4148.0
+federated_states_of_micronesia,1992,0.0
+federated_states_of_micronesia,1993,0.0
+federated_states_of_micronesia,1994,0.0
+federated_states_of_micronesia,1995,0.0
+federated_states_of_micronesia,1996,0.0
 federated_states_of_micronesia,1997,0.0
 federated_states_of_micronesia,1998,0.0
 federated_states_of_micronesia,1999,0.0
@@ -4915,6 +4998,7 @@ federated_states_of_micronesia,2010,0.0
 federated_states_of_micronesia,2011,0.0
 federated_states_of_micronesia,2012,0.0
 federated_states_of_micronesia,2013,0.0
+federated_states_of_micronesia,2014,0.0
 federation_of_malaya_singapore,1950,0.0
 federation_of_malaya_singapore,1951,0.0
 federation_of_malaya_singapore,1952,0.0
@@ -4982,10 +5066,11 @@ fiji,2006,19.0
 fiji,2007,20.0
 fiji,2008,19.0
 fiji,2009,15.0
-fiji,2010,18.0
-fiji,2011,16.0
-fiji,2012,16.0
-fiji,2013,18.0
+fiji,2010,22.0
+fiji,2011,23.0
+fiji,2012,20.0
+fiji,2013,25.0
+fiji,2014,26.0
 finland,1860,0.0
 finland,1861,0.0
 finland,1862,0.0
@@ -5140,6 +5225,7 @@ finland,2010,165.0
 finland,2011,189.0
 finland,2012,176.0
 finland,2013,177.0
+finland,2014,170.0
 former_democratic_yemen,1950,0.0
 former_democratic_yemen,1951,0.0
 former_democratic_yemen,1952,0.0
@@ -5504,6 +5590,7 @@ france_including_monaco,2010,2412.0
 france_including_monaco,2011,2621.0
 france_including_monaco,2012,2422.0
 france_including_monaco,2013,2450.0
+france_including_monaco,2014,2312.0
 french_equatorial_africa,1950,0.0
 french_equatorial_africa,1951,0.0
 french_equatorial_africa,1952,0.0
@@ -5577,6 +5664,7 @@ french_guiana,2010,12.0
 french_guiana,2011,12.0
 french_guiana,2012,14.0
 french_guiana,2013,13.0
+french_guiana,2014,12.0
 french_indo_china,1928,22.0
 french_indo_china,1929,25.0
 french_indo_china,1930,23.0
@@ -5662,6 +5750,7 @@ french_polynesia,2010,0.0
 french_polynesia,2011,0.0
 french_polynesia,2012,0.0
 french_polynesia,2013,0.0
+french_polynesia,2014,0.0
 french_west_africa,1949,6.0
 french_west_africa,1950,8.0
 french_west_africa,1951,7.0
@@ -5724,8 +5813,9 @@ gabon,2008,31.0
 gabon,2009,34.0
 gabon,2010,30.0
 gabon,2011,31.0
-gabon,2012,30.0
-gabon,2013,27.0
+gabon,2012,27.0
+gabon,2013,23.0
+gabon,2014,23.0
 gambia,1950,0.0
 gambia,1951,0.0
 gambia,1952,0.0
@@ -5790,6 +5880,7 @@ gambia,2010,0.0
 gambia,2011,0.0
 gambia,2012,0.0
 gambia,2013,0.0
+gambia,2014,0.0
 georgia,1992,68.0
 georgia,1993,41.0
 georgia,1994,14.0
@@ -5809,9 +5900,10 @@ georgia,2007,61.0
 georgia,2008,61.0
 georgia,2009,118.0
 georgia,2010,117.0
-georgia,2011,117.0
-georgia,2012,118.0
-georgia,2013,129.0
+georgia,2011,204.0
+georgia,2012,210.0
+georgia,2013,220.0
+georgia,2014,221.0
 germany,1792,0.0
 germany,1793,0.0
 germany,1794,0.0
@@ -5987,9 +6079,10 @@ germany,2007,4540.0
 germany,2008,4415.0
 germany,2009,4076.0
 germany,2010,3972.0
-germany,2011,4458.0
-germany,2012,4346.0
+germany,2011,4561.0
+germany,2012,4411.0
 germany,2013,4258.0
+germany,2014,4365.0
 ghana,1950,0.0
 ghana,1951,0.0
 ghana,1952,0.0
@@ -6054,6 +6147,7 @@ ghana,2010,286.0
 ghana,2011,340.0
 ghana,2012,408.0
 ghana,2013,408.0
+ghana,2014,408.0
 gibraltar,1950,0.0
 gibraltar,1951,0.0
 gibraltar,1952,0.0
@@ -6118,6 +6212,7 @@ gibraltar,2010,0.0
 gibraltar,2011,0.0
 gibraltar,2012,0.0
 gibraltar,2013,0.0
+gibraltar,2014,0.0
 greece,1867,0.0
 greece,1868,0.0
 greece,1869,0.0
@@ -6247,10 +6342,11 @@ greece,2006,2132.0
 greece,2007,2267.0
 greece,2008,1741.0
 greece,2009,1369.0
-greece,2010,1160.0
-greece,2011,996.0
-greece,2012,659.0
-greece,2013,680.0
+greece,2010,1260.0
+greece,2011,755.0
+greece,2012,681.0
+greece,2013,815.0
+greece,2014,697.0
 greenland,1950,0.0
 greenland,1951,0.0
 greenland,1952,0.0
@@ -6315,6 +6411,7 @@ greenland,2010,0.0
 greenland,2011,0.0
 greenland,2012,0.0
 greenland,2013,0.0
+greenland,2014,0.0
 grenada,1950,0.0
 grenada,1951,0.0
 grenada,1952,0.0
@@ -6379,6 +6476,7 @@ grenada,2010,0.0
 grenada,2011,0.0
 grenada,2012,0.0
 grenada,2013,0.0
+grenada,2014,0.0
 guadeloupe,1950,0.0
 guadeloupe,1951,0.0
 guadeloupe,1952,0.0
@@ -6443,6 +6541,7 @@ guadeloupe,2010,41.0
 guadeloupe,2011,41.0
 guadeloupe,2012,41.0
 guadeloupe,2013,41.0
+guadeloupe,2014,41.0
 guatemala,1941,3.0
 guatemala,1942,3.0
 guatemala,1943,3.0
@@ -6515,7 +6614,8 @@ guatemala,2009,204.0
 guatemala,2010,380.0
 guatemala,2011,388.0
 guatemala,2012,392.0
-guatemala,2013,394.0
+guatemala,2013,404.0
+guatemala,2014,476.0
 guinea,1958,0.0
 guinea,1959,0.0
 guinea,1960,0.0
@@ -6572,6 +6672,7 @@ guinea,2010,32.0
 guinea,2011,50.0
 guinea,2012,43.0
 guinea,2013,51.0
+guinea,2014,68.0
 guinea_bissau,1950,0.0
 guinea_bissau,1951,0.0
 guinea_bissau,1952,0.0
@@ -6636,6 +6737,7 @@ guinea_bissau,2010,0.0
 guinea_bissau,2011,0.0
 guinea_bissau,2012,0.0
 guinea_bissau,2013,0.0
+guinea_bissau,2014,0.0
 guyana,1950,0.0
 guyana,1951,0.0
 guyana,1952,0.0
@@ -6700,6 +6802,7 @@ guyana,2010,0.0
 guyana,2011,0.0
 guyana,2012,0.0
 guyana,2013,0.0
+guyana,2014,0.0
 haiti,1950,0.0
 haiti,1951,0.0
 haiti,1952,0.0
@@ -6764,6 +6867,7 @@ haiti,2010,41.0
 haiti,2011,41.0
 haiti,2012,41.0
 haiti,2013,41.0
+haiti,2014,41.0
 honduras,1950,0.0
 honduras,1951,0.0
 honduras,1952,0.0
@@ -6828,6 +6932,7 @@ honduras,2010,218.0
 honduras,2011,220.0
 honduras,2012,235.0
 honduras,2013,231.0
+honduras,2014,231.0
 hong_kong_special_administrative_region_of_china,1938,15.0
 hong_kong_special_administrative_region_of_china,1939,15.0
 hong_kong_special_administrative_region_of_china,1941,15.0
@@ -6898,6 +7003,7 @@ hong_kong_special_administrative_region_of_china,2010,199.0
 hong_kong_special_administrative_region_of_china,2011,209.0
 hong_kong_special_administrative_region_of_china,2012,228.0
 hong_kong_special_administrative_region_of_china,2013,240.0
+hong_kong_special_administrative_region_of_china,2014,258.0
 hungary,1830,0.0
 hungary,1831,0.0
 hungary,1832,0.0
@@ -7082,6 +7188,7 @@ hungary,2010,290.0
 hungary,2011,230.0
 hungary,2012,254.0
 hungary,2013,275.0
+hungary,2014,286.0
 iceland,1936,0.0
 iceland,1937,0.0
 iceland,1940,0.0
@@ -7155,8 +7262,9 @@ iceland,2008,19.0
 iceland,2009,19.0
 iceland,2010,19.0
 iceland,2011,19.0
-iceland,2012,19.0
-iceland,2013,19.0
+iceland,2012,0.0
+iceland,2013,0.0
+iceland,2014,0.0
 india,1858,0.0
 india,1859,0.0
 india,1860,0.0
@@ -7299,9 +7407,10 @@ india,2007,23120.0
 india,2008,25160.0
 india,2009,27880.0
 india,2010,29920.0
-india,2011,34000.0
+india,2011,32640.0
 india,2012,36720.0
 india,2013,38080.0
+india,2014,37400.0
 indonesia,1889,0.0
 indonesia,1890,0.0
 indonesia,1891,0.0
@@ -7425,8 +7534,9 @@ indonesia,2008,5240.0
 indonesia,2009,5020.0
 indonesia,2010,5369.0
 indonesia,2011,6152.0
-indonesia,2012,6936.0
-indonesia,2013,7616.0
+indonesia,2012,7120.0
+indonesia,2013,7710.0
+indonesia,2014,7888.0
 iraq,1924,0.0
 iraq,1925,0.0
 iraq,1926,0.0
@@ -7517,6 +7627,7 @@ iraq,2010,1088.0
 iraq,2011,1360.0
 iraq,2012,1360.0
 iraq,2013,1632.0
+iraq,2014,1768.0
 ireland,1850,0.0
 ireland,1880,0.0
 ireland,1881,0.0
@@ -7620,6 +7731,7 @@ ireland,2010,324.0
 ireland,2011,286.0
 ireland,2012,163.0
 ireland,2013,272.0
+ireland,2014,272.0
 islamic_republic_of_iran,1902,0.0
 islamic_republic_of_iran,1903,0.0
 islamic_republic_of_iran,1905,0.0
@@ -7729,8 +7841,9 @@ islamic_republic_of_iran,2008,6038.0
 islamic_republic_of_iran,2009,6800.0
 islamic_republic_of_iran,2010,8296.0
 islamic_republic_of_iran,2011,8976.0
-islamic_republic_of_iran,2012,9520.0
-islamic_republic_of_iran,2013,9792.0
+islamic_republic_of_iran,2012,9554.0
+islamic_republic_of_iran,2013,9343.0
+islamic_republic_of_iran,2014,8976.0
 israel,1930,11.0
 israel,1931,11.0
 israel,1932,14.0
@@ -7815,6 +7928,7 @@ israel,2010,699.0
 israel,2011,745.0
 israel,2012,801.0
 israel,2013,870.0
+israel,2014,898.0
 italy_including_san_marino,1860,0.0
 italy_including_san_marino,1861,0.0
 italy_including_san_marino,1862,0.0
@@ -7967,8 +8081,9 @@ italy_including_san_marino,2008,5852.0
 italy_including_san_marino,2009,4939.0
 italy_including_san_marino,2010,4679.0
 italy_including_san_marino,2011,4504.0
-italy_including_san_marino,2012,3563.0
-italy_including_san_marino,2013,2992.0
+italy_including_san_marino,2012,3569.0
+italy_including_san_marino,2013,3142.0
+italy_including_san_marino,2014,2910.0
 jamaica,1950,0.0
 jamaica,1951,0.0
 jamaica,1952,10.0
@@ -8033,6 +8148,7 @@ jamaica,2010,98.0
 jamaica,2011,104.0
 jamaica,2012,103.0
 jamaica,2013,112.0
+jamaica,2014,113.0
 japan,1950,607.0
 japan,1951,891.0
 japan,1952,968.0
@@ -8096,7 +8212,8 @@ japan,2009,7453.0
 japan,2010,7008.0
 japan,2011,6976.0
 japan,2012,7444.0
-japan,2013,7806.0
+japan,2013,7883.0
+japan,2014,7876.0
 japan_excluding_the_ruyuku_islands,1868,0.0
 japan_excluding_the_ruyuku_islands,1869,0.0
 japan_excluding_the_ruyuku_islands,1870,0.0
@@ -8241,8 +8358,9 @@ jordan,2008,595.0
 jordan,2009,527.0
 jordan,2010,534.0
 jordan,2011,383.0
-jordan,2012,666.0
-jordan,2013,680.0
+jordan,2012,552.0
+jordan,2013,571.0
+jordan,2014,612.0
 kazakhstan,1992,870.0
 kazakhstan,1993,544.0
 kazakhstan,1994,272.0
@@ -8263,8 +8381,9 @@ kazakhstan,2008,794.0
 kazakhstan,2009,774.0
 kazakhstan,2010,909.0
 kazakhstan,2011,1039.0
-kazakhstan,2012,872.0
+kazakhstan,2012,959.0
 kazakhstan,2013,962.0
+kazakhstan,2014,1085.0
 kenya,1950,0.0
 kenya,1951,3.0
 kenya,1952,4.0
@@ -8329,6 +8448,7 @@ kenya,2010,505.0
 kenya,2011,609.0
 kenya,2012,631.0
 kenya,2013,688.0
+kenya,2014,759.0
 kiribati,1961,0.0
 kiribati,1962,0.0
 kiribati,1963,0.0
@@ -8382,6 +8502,7 @@ kiribati,2010,0.0
 kiribati,2011,0.0
 kiribati,2012,0.0
 kiribati,2013,0.0
+kiribati,2014,0.0
 kuwait,1946,0.0
 kuwait,1947,0.0
 kuwait,1948,0.0
@@ -8448,8 +8569,9 @@ kuwait,2008,354.0
 kuwait,2009,272.0
 kuwait,2010,272.0
 kuwait,2011,306.0
-kuwait,2012,306.0
-kuwait,2013,306.0
+kuwait,2012,326.0
+kuwait,2013,408.0
+kuwait,2014,517.0
 kuwaiti_oil_fires,1991,0.0
 kyrgyzstan,1992,150.0
 kyrgyzstan,1993,95.0
@@ -8473,6 +8595,7 @@ kyrgyzstan,2010,103.0
 kyrgyzstan,2011,139.0
 kyrgyzstan,2012,169.0
 kyrgyzstan,2013,228.0
+kyrgyzstan,2014,235.0
 lao_people_s_democratic_republic,1955,0.0
 lao_people_s_democratic_republic,1956,0.0
 lao_people_s_democratic_republic,1957,0.0
@@ -8532,6 +8655,7 @@ lao_people_s_democratic_republic,2010,163.0
 lao_people_s_democratic_republic,2011,177.0
 lao_people_s_democratic_republic,2012,204.0
 lao_people_s_democratic_republic,2013,204.0
+lao_people_s_democratic_republic,2014,326.0
 latvia,1928,3.0
 latvia,1929,5.0
 latvia,1930,10.0
@@ -8566,6 +8690,7 @@ latvia,2010,86.0
 latvia,2011,102.0
 latvia,2012,123.0
 latvia,2013,136.0
+latvia,2014,163.0
 lebanon,1931,1.0
 lebanon,1932,3.0
 lebanon,1933,4.0
@@ -8648,6 +8773,7 @@ lebanon,2010,711.0
 lebanon,2011,748.0
 lebanon,2012,722.0
 lebanon,2013,793.0
+lebanon,2014,750.0
 leeward_islands,1950,0.0
 leeward_islands,1951,0.0
 leeward_islands,1952,0.0
@@ -8655,6 +8781,21 @@ leeward_islands,1953,0.0
 leeward_islands,1954,0.0
 leeward_islands,1955,0.0
 leeward_islands,1956,0.0
+lesotho,1990,0.0
+lesotho,1991,0.0
+lesotho,1992,0.0
+lesotho,1993,0.0
+lesotho,1994,0.0
+lesotho,1995,0.0
+lesotho,1996,0.0
+lesotho,1997,0.0
+lesotho,1998,0.0
+lesotho,1999,0.0
+lesotho,2000,0.0
+lesotho,2001,0.0
+lesotho,2002,0.0
+lesotho,2003,0.0
+lesotho,2004,0.0
 lesotho,2005,0.0
 lesotho,2006,0.0
 lesotho,2007,0.0
@@ -8664,6 +8805,7 @@ lesotho,2010,0.0
 lesotho,2011,0.0
 lesotho,2012,0.0
 lesotho,2013,0.0
+lesotho,2014,0.0
 liberia,1950,0.0
 liberia,1951,0.0
 liberia,1952,0.0
@@ -8727,7 +8869,8 @@ liberia,2009,10.0
 liberia,2010,10.0
 liberia,2011,11.0
 liberia,2012,17.0
-liberia,2013,25.0
+liberia,2013,26.0
+liberia,2014,40.0
 libyan_arab_jamahiriyah,1950,0.0
 libyan_arab_jamahiriyah,1951,0.0
 libyan_arab_jamahiriyah,1952,0.0
@@ -8792,6 +8935,7 @@ libyan_arab_jamahiriyah,2010,952.0
 libyan_arab_jamahiriyah,2011,476.0
 libyan_arab_jamahiriyah,2012,272.0
 libyan_arab_jamahiriyah,2013,272.0
+libyan_arab_jamahiriyah,2014,272.0
 liechtenstein,2007,0.0
 liechtenstein,2008,0.0
 liechtenstein,2009,0.0
@@ -8799,6 +8943,7 @@ liechtenstein,2010,0.0
 liechtenstein,2011,0.0
 liechtenstein,2012,0.0
 liechtenstein,2013,0.0
+liechtenstein,2014,0.0
 lithuania,1992,204.0
 lithuania,1993,136.0
 lithuania,1994,100.0
@@ -8821,6 +8966,7 @@ lithuania,2010,113.0
 lithuania,2011,135.0
 lithuania,2012,138.0
 lithuania,2013,146.0
+lithuania,2014,123.0
 luxembourg,1945,7.0
 luxembourg,1946,10.0
 luxembourg,1947,12.0
@@ -8889,7 +9035,8 @@ luxembourg,2009,136.0
 luxembourg,2010,147.0
 luxembourg,2011,179.0
 luxembourg,2012,160.0
-luxembourg,2013,163.0
+luxembourg,2013,133.0
+luxembourg,2014,150.0
 macau_special_administrative_region_of_china,1954,0.0
 macau_special_administrative_region_of_china,1955,0.0
 macau_special_administrative_region_of_china,1956,0.0
@@ -8950,6 +9097,7 @@ macau_special_administrative_region_of_china,2010,0.0
 macau_special_administrative_region_of_china,2011,0.0
 macau_special_administrative_region_of_china,2012,0.0
 macau_special_administrative_region_of_china,2013,0.0
+macau_special_administrative_region_of_china,2014,0.0
 macedonia,1992,70.0
 macedonia,1993,68.0
 macedonia,1994,66.0
@@ -8972,6 +9120,7 @@ macedonia,2010,112.0
 macedonia,2011,133.0
 macedonia,2012,93.0
 macedonia,2013,104.0
+macedonia,2014,93.0
 madagascar,1933,1.0
 madagascar,1934,2.0
 madagascar,1935,1.0
@@ -9040,9 +9189,10 @@ madagascar,2007,37.0
 madagascar,2008,22.0
 madagascar,2009,19.0
 madagascar,2010,22.0
-madagascar,2011,20.0
-madagascar,2012,20.0
-madagascar,2013,20.0
+madagascar,2011,27.0
+madagascar,2012,31.0
+madagascar,2013,31.0
+madagascar,2014,33.0
 malawi,1964,4.0
 malawi,1965,4.0
 malawi,1966,6.0
@@ -9093,6 +9243,7 @@ malawi,2010,26.0
 malawi,2011,28.0
 malawi,2012,23.0
 malawi,2013,44.0
+malawi,2014,61.0
 malaysia,1970,140.0
 malaysia,1971,149.0
 malaysia,1972,158.0
@@ -9137,6 +9288,7 @@ malaysia,2010,2688.0
 malaysia,2011,2883.0
 malaysia,2012,2955.0
 malaysia,2013,2918.0
+malaysia,2014,2992.0
 maldives,1971,0.0
 maldives,1972,0.0
 maldives,1973,0.0
@@ -9180,6 +9332,7 @@ maldives,2010,0.0
 maldives,2011,0.0
 maldives,2012,0.0
 maldives,2013,0.0
+maldives,2014,0.0
 mali,1959,0.0
 mali,1960,0.0
 mali,1961,0.0
@@ -9235,6 +9388,7 @@ mali,2010,0.0
 mali,2011,0.0
 mali,2012,0.0
 mali,2013,0.0
+mali,2014,0.0
 malta,1950,0.0
 malta,1951,0.0
 malta,1952,0.0
@@ -9299,8 +9453,7 @@ malta,2010,0.0
 malta,2011,0.0
 malta,2012,0.0
 malta,2013,0.0
-marshall_islands,1990,0.0
-marshall_islands,1991,0.0
+malta,2014,0.0
 marshall_islands,1992,0.0
 marshall_islands,1993,0.0
 marshall_islands,1994,0.0
@@ -9323,6 +9476,7 @@ marshall_islands,2010,0.0
 marshall_islands,2011,0.0
 marshall_islands,2012,0.0
 marshall_islands,2013,0.0
+marshall_islands,2014,0.0
 martinique,1950,0.0
 martinique,1951,0.0
 martinique,1952,0.0
@@ -9387,6 +9541,7 @@ martinique,2010,20.0
 martinique,2011,20.0
 martinique,2012,20.0
 martinique,2013,20.0
+martinique,2014,20.0
 mauritania,1959,0.0
 mauritania,1960,0.0
 mauritania,1961,0.0
@@ -9441,7 +9596,8 @@ mauritania,2009,44.0
 mauritania,2010,75.0
 mauritania,2011,77.0
 mauritania,2012,88.0
-mauritania,2013,88.0
+mauritania,2013,94.0
+mauritania,2014,105.0
 mauritius,1950,0.0
 mauritius,1951,0.0
 mauritius,1952,0.0
@@ -9506,6 +9662,7 @@ mauritius,2010,0.0
 mauritius,2011,0.0
 mauritius,2012,0.0
 mauritius,2013,0.0
+mauritius,2014,0.0
 mexico,1891,0.0
 mexico,1892,0.0
 mexico,1893,0.0
@@ -9629,6 +9786,7 @@ mexico,2010,4692.0
 mexico,2011,4814.0
 mexico,2012,4921.0
 mexico,2013,4707.0
+mexico,2014,4760.0
 mongolia,1950,0.0
 mongolia,1951,0.0
 mongolia,1952,0.0
@@ -9692,7 +9850,8 @@ mongolia,2009,32.0
 mongolia,2010,44.0
 mongolia,2011,58.0
 mongolia,2012,47.0
-mongolia,2013,38.0
+mongolia,2013,35.0
+mongolia,2014,56.0
 montenegro,2006,0.0
 montenegro,2007,0.0
 montenegro,2008,0.0
@@ -9701,6 +9860,7 @@ montenegro,2010,0.0
 montenegro,2011,0.0
 montenegro,2012,0.0
 montenegro,2013,0.0
+montenegro,2014,0.0
 montserrat,1962,0.0
 montserrat,1963,0.0
 montserrat,1964,0.0
@@ -9753,6 +9913,7 @@ montserrat,2010,0.0
 montserrat,2011,0.0
 montserrat,2012,0.0
 montserrat,2013,0.0
+montserrat,2014,0.0
 morocco,1928,8.0
 morocco,1929,9.0
 morocco,1930,10.0
@@ -9837,8 +9998,9 @@ morocco,2008,1910.0
 morocco,2009,1975.0
 morocco,2010,1904.0
 morocco,2011,1904.0
-morocco,2012,2149.0
-morocco,2013,2026.0
+morocco,2012,2213.0
+morocco,2013,2294.0
+morocco,2014,2137.0
 mozambique,1927,0.0
 mozambique,1928,2.0
 mozambique,1929,3.0
@@ -9926,6 +10088,7 @@ mozambique,2010,120.0
 mozambique,2011,133.0
 mozambique,2012,161.0
 mozambique,2013,177.0
+mozambique,2014,204.0
 myanmar_formerly_burma,1928,0.0
 myanmar_formerly_burma,1929,0.0
 myanmar_formerly_burma,1930,0.0
@@ -10010,9 +10173,9 @@ myanmar_formerly_burma,2008,92.0
 myanmar_formerly_burma,2009,91.0
 myanmar_formerly_burma,2010,73.0
 myanmar_formerly_burma,2011,73.0
-myanmar_formerly_burma,2012,82.0
-myanmar_formerly_burma,2013,82.0
-namibia,1990,0.0
+myanmar_formerly_burma,2012,125.0
+myanmar_formerly_burma,2013,152.0
+myanmar_formerly_burma,2014,179.0
 namibia,1991,0.0
 namibia,1992,0.0
 namibia,1993,0.0
@@ -10036,6 +10199,7 @@ namibia,2010,1.0
 namibia,2011,53.0
 namibia,2012,68.0
 namibia,2013,90.0
+namibia,2014,99.0
 nauru,1964,0.0
 nauru,1965,0.0
 nauru,1966,0.0
@@ -10086,6 +10250,7 @@ nauru,2010,0.0
 nauru,2011,0.0
 nauru,2012,0.0
 nauru,2013,0.0
+nauru,2014,0.0
 nepal,1950,0.0
 nepal,1951,0.0
 nepal,1952,0.0
@@ -10148,8 +10313,9 @@ nepal,2008,40.0
 nepal,2009,163.0
 nepal,2010,185.0
 nepal,2011,286.0
-nepal,2012,367.0
-nepal,2013,408.0
+nepal,2012,370.0
+nepal,2013,407.0
+nepal,2014,422.0
 netherland_antilles,1986,0.0
 netherland_antilles,1987,0.0
 netherland_antilles,1988,0.0
@@ -10402,7 +10568,8 @@ netherlands,2009,319.0
 netherlands,2010,291.0
 netherlands,2011,315.0
 netherlands,2012,280.0
-netherlands,2013,340.0
+netherlands,2013,272.0
+netherlands,2014,272.0
 new_caledonia,1950,0.0
 new_caledonia,1951,0.0
 new_caledonia,1952,0.0
@@ -10466,7 +10633,8 @@ new_caledonia,2009,19.0
 new_caledonia,2010,22.0
 new_caledonia,2011,20.0
 new_caledonia,2012,17.0
-new_caledonia,2013,15.0
+new_caledonia,2013,16.0
+new_caledonia,2014,14.0
 new_zealand,1878,0.0
 new_zealand,1879,0.0
 new_zealand,1880,0.0
@@ -10601,8 +10769,9 @@ new_zealand,2008,163.0
 new_zealand,2009,163.0
 new_zealand,2010,150.0
 new_zealand,2011,163.0
-new_zealand,2012,163.0
-new_zealand,2013,163.0
+new_zealand,2012,155.0
+new_zealand,2013,158.0
+new_zealand,2014,150.0
 nicaragua,1942,0.0
 nicaragua,1943,2.0
 nicaragua,1944,1.0
@@ -10673,8 +10842,9 @@ nicaragua,2008,72.0
 nicaragua,2009,72.0
 nicaragua,2010,82.0
 nicaragua,2011,95.0
-nicaragua,2012,99.0
-nicaragua,2013,95.0
+nicaragua,2012,84.0
+nicaragua,2013,88.0
+nicaragua,2014,95.0
 niger,1958,0.0
 niger,1959,0.0
 niger,1960,0.0
@@ -10730,7 +10900,8 @@ niger,2009,6.0
 niger,2010,4.0
 niger,2011,10.0
 niger,2012,10.0
-niger,2013,10.0
+niger,2013,4.0
+niger,2014,3.0
 nigeria,1915,0.0
 nigeria,1916,0.0
 nigeria,1917,0.0
@@ -10826,10 +10997,11 @@ nigeria,2006,449.0
 nigeria,2007,639.0
 nigeria,2008,1360.0
 nigeria,2009,1360.0
-nigeria,2010,1496.0
-nigeria,2011,1741.0
-nigeria,2012,2230.0
-nigeria,2013,2448.0
+nigeria,2010,1360.0
+nigeria,2011,1632.0
+nigeria,2012,2176.0
+nigeria,2013,2720.0
+nigeria,2014,2720.0
 niue,1970,0.0
 niue,1971,0.0
 niue,1972,0.0
@@ -10874,6 +11046,7 @@ niue,2010,0.0
 niue,2011,0.0
 niue,2012,0.0
 niue,2013,0.0
+niue,2014,0.0
 norway,1829,0.0
 norway,1830,0.0
 norway,1831,0.0
@@ -11056,6 +11229,14 @@ norway,2010,177.0
 norway,2011,189.0
 norway,2012,226.0
 norway,2013,231.0
+norway,2014,231.0
+occupied_palestinian_territory,1990,0.0
+occupied_palestinian_territory,1991,0.0
+occupied_palestinian_territory,1992,0.0
+occupied_palestinian_territory,1993,0.0
+occupied_palestinian_territory,1994,0.0
+occupied_palestinian_territory,1995,0.0
+occupied_palestinian_territory,1996,0.0
 occupied_palestinian_territory,1997,0.0
 occupied_palestinian_territory,1998,0.0
 occupied_palestinian_territory,1999,0.0
@@ -11073,6 +11254,7 @@ occupied_palestinian_territory,2010,0.0
 occupied_palestinian_territory,2011,0.0
 occupied_palestinian_territory,2012,0.0
 occupied_palestinian_territory,2013,0.0
+occupied_palestinian_territory,2014,0.0
 oman,1964,0.0
 oman,1965,0.0
 oman,1966,0.0
@@ -11121,8 +11303,9 @@ oman,2008,543.0
 oman,2009,544.0
 oman,2010,612.0
 oman,2011,680.0
-oman,2012,707.0
+oman,2012,694.0
 oman,2013,608.0
+oman,2014,680.0
 pacific_islands_palau,1955,0.0
 pacific_islands_palau,1956,0.0
 pacific_islands_palau,1957,0.0
@@ -11199,9 +11382,10 @@ pakistan,2007,3501.0
 pakistan,2008,4189.0
 pakistan,2009,4066.0
 pakistan,2010,4080.0
-pakistan,2011,3958.0
-pakistan,2012,4121.0
+pakistan,2011,3944.0
+pakistan,2012,4080.0
 pakistan,2013,4216.0
+pakistan,2014,4352.0
 palau,1992,0.0
 palau,1993,0.0
 palau,1994,0.0
@@ -11224,6 +11408,7 @@ palau,2010,0.0
 palau,2011,0.0
 palau,2012,0.0
 palau,2013,0.0
+palau,2014,0.0
 panama,1948,6.0
 panama,1949,7.0
 panama,1950,7.0
@@ -11288,8 +11473,9 @@ panama,2008,251.0
 panama,2009,228.0
 panama,2010,203.0
 panama,2011,240.0
-panama,2012,306.0
-panama,2013,272.0
+panama,2012,314.0
+panama,2013,322.0
+panama,2014,298.0
 papua_new_guinea,1950,0.0
 papua_new_guinea,1951,0.0
 papua_new_guinea,1952,0.0
@@ -11350,10 +11536,11 @@ papua_new_guinea,2006,0.0
 papua_new_guinea,2007,0.0
 papua_new_guinea,2008,0.0
 papua_new_guinea,2009,0.0
-papua_new_guinea,2010,0.0
-papua_new_guinea,2011,0.0
-papua_new_guinea,2012,0.0
-papua_new_guinea,2013,0.0
+papua_new_guinea,2010,27.0
+papua_new_guinea,2011,27.0
+papua_new_guinea,2012,27.0
+papua_new_guinea,2013,27.0
+papua_new_guinea,2014,27.0
 paraguay,1950,0.0
 paraguay,1951,0.0
 paraguay,1952,1.0
@@ -11416,8 +11603,9 @@ paraguay,2008,109.0
 paraguay,2009,82.0
 paraguay,2010,88.0
 paraguay,2011,88.0
-paraguay,2012,88.0
-paraguay,2013,88.0
+paraguay,2012,109.0
+paraguay,2013,131.0
+paraguay,2014,136.0
 peninsular_malaysia,1890,0.0
 peninsular_malaysia,1891,0.0
 peninsular_malaysia,1892,0.0
@@ -11619,8 +11807,9 @@ peru,2008,941.0
 peru,2009,1102.0
 peru,2010,1142.0
 peru,2011,1156.0
-peru,2012,1224.0
+peru,2012,1374.0
 peru,2013,1432.0
+peru,2014,1452.0
 philippines,1907,0.0
 philippines,1908,0.0
 philippines,1909,0.0
@@ -11725,6 +11914,7 @@ philippines,2010,2162.0
 philippines,2011,2185.0
 philippines,2012,2571.0
 philippines,2013,2740.0
+philippines,2014,2992.0
 plurinational_state_of_bolivia,1928,0.0
 plurinational_state_of_bolivia,1929,0.0
 plurinational_state_of_bolivia,1930,0.0
@@ -11810,7 +12000,8 @@ plurinational_state_of_bolivia,2009,312.0
 plurinational_state_of_bolivia,2010,328.0
 plurinational_state_of_bolivia,2011,361.0
 plurinational_state_of_bolivia,2012,369.0
-plurinational_state_of_bolivia,2013,340.0
+plurinational_state_of_bolivia,2013,422.0
+plurinational_state_of_bolivia,2014,476.0
 poland,1800,0.0
 poland,1801,0.0
 poland,1802,0.0
@@ -12025,6 +12216,7 @@ poland,2010,2111.0
 poland,2011,2523.0
 poland,2012,2165.0
 poland,2013,1977.0
+poland,2014,2089.0
 portugal,1870,0.0
 portugal,1871,0.0
 portugal,1872,0.0
@@ -12169,6 +12361,7 @@ portugal,2010,624.0
 portugal,2011,689.0
 portugal,2012,556.0
 portugal,2013,680.0
+portugal,2014,748.0
 puerto_rico,1920,0.0
 qatar,1949,0.0
 qatar,1950,0.0
@@ -12231,10 +12424,11 @@ qatar,2006,213.0
 qatar,2007,326.0
 qatar,2008,517.0
 qatar,2009,557.0
-qatar,2010,544.0
+qatar,2010,514.0
 qatar,2011,680.0
 qatar,2012,748.0
 qatar,2013,726.0
+qatar,2014,816.0
 republic_of_cameroon,1950,0.0
 republic_of_cameroon,1951,0.0
 republic_of_cameroon,1952,0.0
@@ -12299,6 +12493,7 @@ republic_of_cameroon,2010,136.0
 republic_of_cameroon,2011,156.0
 republic_of_cameroon,2012,173.0
 republic_of_cameroon,2013,190.0
+republic_of_cameroon,2014,177.0
 republic_of_korea,1945,1.0
 republic_of_korea,1946,1.0
 republic_of_korea,1947,2.0
@@ -12366,8 +12561,9 @@ republic_of_korea,2008,7025.0
 republic_of_korea,2009,6817.0
 republic_of_korea,2010,6449.0
 republic_of_korea,2011,6562.0
-republic_of_korea,2012,6404.0
+republic_of_korea,2012,6373.0
 republic_of_korea,2013,6432.0
+republic_of_korea,2014,6399.0
 republic_of_moldova,1992,95.0
 republic_of_moldova,1993,14.0
 republic_of_moldova,1994,5.0
@@ -12389,9 +12585,11 @@ republic_of_moldova,2009,95.0
 republic_of_moldova,2010,122.0
 republic_of_moldova,2011,136.0
 republic_of_moldova,2012,163.0
-republic_of_moldova,2013,150.0
+republic_of_moldova,2013,156.0
+republic_of_moldova,2014,177.0
 republic_of_south_sudan,2012,0.0
 republic_of_south_sudan,2013,0.0
+republic_of_south_sudan,2014,0.0
 republic_of_south_vietnam,1955,41.0
 republic_of_south_vietnam,1956,0.0
 republic_of_south_vietnam,1957,0.0
@@ -12408,7 +12606,8 @@ republic_of_south_vietnam,1967,25.0
 republic_of_south_vietnam,1968,20.0
 republic_of_south_vietnam,1969,34.0
 republic_of_sudan,2012,477.0
-republic_of_sudan,2013,476.0
+republic_of_sudan,2013,481.0
+republic_of_sudan,2014,473.0
 reunion,1950,0.0
 reunion,1951,0.0
 reunion,1952,0.0
@@ -12473,6 +12672,7 @@ reunion,2010,41.0
 reunion,2011,34.0
 reunion,2012,48.0
 reunion,2013,54.0
+reunion,2014,54.0
 rhodesia_nyasaland,1950,20.0
 rhodesia_nyasaland,1951,23.0
 rhodesia_nyasaland,1952,34.0
@@ -12644,6 +12844,7 @@ romania,2010,940.0
 romania,2011,994.0
 romania,2012,1118.0
 romania,2013,1013.0
+romania,2014,1074.0
 russian_federation,1992,8391.0
 russian_federation,1993,6786.0
 russian_federation,1994,5059.0
@@ -12665,7 +12866,8 @@ russian_federation,2009,6020.0
 russian_federation,2010,6854.0
 russian_federation,2011,7643.0
 russian_federation,2012,8391.0
-russian_federation,2013,9030.0
+russian_federation,2013,9044.0
+russian_federation,2014,9322.0
 rwanda,1962,0.0
 rwanda,1963,0.0
 rwanda,1964,0.0
@@ -12717,7 +12919,8 @@ rwanda,2009,13.0
 rwanda,2010,13.0
 rwanda,2011,13.0
 rwanda,2012,14.0
-rwanda,2013,14.0
+rwanda,2013,15.0
+rwanda,2014,19.0
 rwanda_urundi,1950,0.0
 rwanda_urundi,1951,0.0
 rwanda_urundi,1952,0.0
@@ -12805,6 +13008,7 @@ saint_helena,2010,0.0
 saint_helena,2011,0.0
 saint_helena,2012,0.0
 saint_helena,2013,0.0
+saint_helena,2014,0.0
 saint_lucia,1950,0.0
 saint_lucia,1951,0.0
 saint_lucia,1952,0.0
@@ -12869,8 +13073,10 @@ saint_lucia,2010,0.0
 saint_lucia,2011,0.0
 saint_lucia,2012,0.0
 saint_lucia,2013,0.0
+saint_lucia,2014,0.0
 saint_martin_dutch_portion,2012,0.0
 saint_martin_dutch_portion,2013,0.0
+saint_martin_dutch_portion,2014,0.0
 samoa,1950,0.0
 samoa,1951,0.0
 samoa,1952,0.0
@@ -12935,6 +13141,7 @@ samoa,2010,0.0
 samoa,2011,0.0
 samoa,2012,0.0
 samoa,2013,0.0
+samoa,2014,0.0
 sao_tome_principe,1951,0.0
 sao_tome_principe,1952,0.0
 sao_tome_principe,1953,0.0
@@ -12998,6 +13205,7 @@ sao_tome_principe,2010,0.0
 sao_tome_principe,2011,0.0
 sao_tome_principe,2012,0.0
 sao_tome_principe,2013,0.0
+sao_tome_principe,2014,0.0
 sarawak,1924,0.0
 sarawak,1948,0.0
 sarawak,1950,0.0
@@ -13095,10 +13303,11 @@ saudi_arabia,2006,3680.0
 saudi_arabia,2007,4130.0
 saudi_arabia,2008,4328.0
 saudi_arabia,2009,6256.0
-saudi_arabia,2010,6460.0
-saudi_arabia,2011,6895.0
-saudi_arabia,2012,7643.0
-saudi_arabia,2013,7752.0
+saudi_arabia,2010,5825.0
+saudi_arabia,2011,6589.0
+saudi_arabia,2012,7253.0
+saudi_arabia,2013,7648.0
+saudi_arabia,2014,7782.0
 senegal,1958,20.0
 senegal,1959,23.0
 senegal,1960,23.0
@@ -13155,14 +13364,16 @@ senegal,2010,553.0
 senegal,2011,636.0
 senegal,2012,638.0
 senegal,2013,706.0
+senegal,2014,666.0
 serbia,2006,410.0
 serbia,2007,428.0
 serbia,2008,467.0
 serbia,2009,363.0
-serbia,2010,339.0
-serbia,2011,335.0
+serbia,2010,347.0
+serbia,2011,342.0
 serbia,2012,322.0
-serbia,2013,289.0
+serbia,2013,293.0
+serbia,2014,304.0
 seychelles,1963,0.0
 seychelles,1964,0.0
 seychelles,1965,0.0
@@ -13214,6 +13425,7 @@ seychelles,2010,0.0
 seychelles,2011,0.0
 seychelles,2012,0.0
 seychelles,2013,0.0
+seychelles,2014,0.0
 sierra_leone,1950,0.0
 sierra_leone,1951,0.0
 sierra_leone,1952,0.0
@@ -13278,6 +13490,7 @@ sierra_leone,2010,41.0
 sierra_leone,2011,42.0
 sierra_leone,2012,46.0
 sierra_leone,2013,43.0
+sierra_leone,2014,46.0
 singapore,1957,0.0
 singapore,1958,0.0
 singapore,1959,0.0
@@ -13335,6 +13548,7 @@ singapore,2010,0.0
 singapore,2011,0.0
 singapore,2012,0.0
 singapore,2013,0.0
+singapore,2014,0.0
 slovakia,1992,340.0
 slovakia,1993,340.0
 slovakia,1994,367.0
@@ -13357,6 +13571,7 @@ slovakia,2010,393.0
 slovakia,2011,438.0
 slovakia,2012,396.0
 slovakia,2013,424.0
+slovakia,2014,451.0
 slovenia,1992,109.0
 slovenia,1993,96.0
 slovenia,1994,122.0
@@ -13379,6 +13594,7 @@ slovenia,2010,109.0
 slovenia,2011,84.0
 slovenia,2012,130.0
 slovenia,2013,155.0
+slovenia,2014,180.0
 solomon_islands,1952,0.0
 solomon_islands,1953,0.0
 solomon_islands,1954,0.0
@@ -13441,6 +13657,7 @@ solomon_islands,2010,0.0
 solomon_islands,2011,0.0
 solomon_islands,2012,0.0
 solomon_islands,2013,0.0
+solomon_islands,2014,0.0
 somalia,1950,0.0
 somalia,1951,0.0
 somalia,1952,0.0
@@ -13487,6 +13704,10 @@ somalia,1992,3.0
 somalia,1993,3.0
 somalia,1994,3.0
 somalia,1995,3.0
+somalia,1996,0.0
+somalia,1997,0.0
+somalia,1998,0.0
+somalia,1999,0.0
 somalia,2000,0.0
 somalia,2001,0.0
 somalia,2002,0.0
@@ -13501,6 +13722,7 @@ somalia,2010,0.0
 somalia,2011,0.0
 somalia,2012,0.0
 somalia,2013,0.0
+somalia,2014,0.0
 south_africa,1884,0.0
 south_africa,1885,0.0
 south_africa,1886,0.0
@@ -13630,7 +13852,8 @@ south_africa,2009,1603.0
 south_africa,2010,1478.0
 south_africa,2011,1528.0
 south_africa,2012,1572.0
-south_africa,2013,1659.0
+south_africa,2013,1655.0
+south_africa,2014,1642.0
 spain,1830,0.0
 spain,1831,0.0
 spain,1832,0.0
@@ -13814,7 +14037,8 @@ spain,2009,4013.0
 spain,2010,3566.0
 spain,2011,3016.0
 spain,2012,2168.0
-spain,2013,1850.0
+spain,2013,1868.0
+spain,2014,1984.0
 sri_lanka,1950,0.0
 sri_lanka,1951,9.0
 sri_lanka,1952,8.0
@@ -13875,10 +14099,11 @@ sri_lanka,2006,218.0
 sri_lanka,2007,231.0
 sri_lanka,2008,245.0
 sri_lanka,2009,258.0
-sri_lanka,2010,354.0
-sri_lanka,2011,299.0
-sri_lanka,2012,326.0
-sri_lanka,2013,408.0
+sri_lanka,2010,236.0
+sri_lanka,2011,270.0
+sri_lanka,2012,273.0
+sri_lanka,2013,262.0
+sri_lanka,2014,256.0
 st_kitts_nevis,1981,0.0
 st_kitts_nevis,1982,0.0
 st_kitts_nevis,1983,0.0
@@ -13912,6 +14137,7 @@ st_kitts_nevis,2010,0.0
 st_kitts_nevis,2011,0.0
 st_kitts_nevis,2012,0.0
 st_kitts_nevis,2013,0.0
+st_kitts_nevis,2014,0.0
 st_kitts_nevis_anguilla,1957,0.0
 st_kitts_nevis_anguilla,1958,0.0
 st_kitts_nevis_anguilla,1959,0.0
@@ -14000,6 +14226,7 @@ st_pierre_miquelon,2010,0.0
 st_pierre_miquelon,2011,0.0
 st_pierre_miquelon,2012,0.0
 st_pierre_miquelon,2013,0.0
+st_pierre_miquelon,2014,0.0
 st_vincent_the_grenadines,1950,0.0
 st_vincent_the_grenadines,1951,0.0
 st_vincent_the_grenadines,1952,0.0
@@ -14064,6 +14291,7 @@ st_vincent_the_grenadines,2010,0.0
 st_vincent_the_grenadines,2011,0.0
 st_vincent_the_grenadines,2012,0.0
 st_vincent_the_grenadines,2013,0.0
+st_vincent_the_grenadines,2014,0.0
 sudan,1950,0.0
 sudan,1951,0.0
 sudan,1952,0.0
@@ -14189,7 +14417,8 @@ suriname,2009,7.0
 suriname,2010,6.0
 suriname,2011,10.0
 suriname,2012,16.0
-suriname,2013,9.0
+suriname,2013,18.0
+suriname,2014,18.0
 swaziland,1950,0.0
 swaziland,1951,0.0
 swaziland,1952,0.0
@@ -14252,6 +14481,7 @@ swaziland,2010,0.0
 swaziland,2011,0.0
 swaziland,2012,0.0
 swaziland,2013,0.0
+swaziland,2014,0.0
 sweden,1834,0.0
 sweden,1839,0.0
 sweden,1840,0.0
@@ -14427,7 +14657,8 @@ sweden,2009,216.0
 sweden,2010,244.0
 sweden,2011,281.0
 sweden,2012,291.0
-sweden,2013,340.0
+sweden,2013,348.0
+sweden,2014,340.0
 switzerland,1858,0.0
 switzerland,1859,0.0
 switzerland,1860,0.0
@@ -14582,8 +14813,9 @@ switzerland,2008,558.0
 switzerland,2009,566.0
 switzerland,2010,616.0
 switzerland,2011,622.0
-switzerland,2012,608.0
-switzerland,2013,640.0
+switzerland,2012,617.0
+switzerland,2013,618.0
+switzerland,2014,583.0
 syrian_arab_republic,1931,1.0
 syrian_arab_republic,1932,3.0
 syrian_arab_republic,1933,4.0
@@ -14667,6 +14899,7 @@ syrian_arab_republic,2010,816.0
 syrian_arab_republic,2011,680.0
 syrian_arab_republic,2012,816.0
 syrian_arab_republic,2013,544.0
+syrian_arab_republic,2014,517.0
 taiwan,1896,0.0
 taiwan,1897,0.0
 taiwan,1898,0.0
@@ -14785,6 +15018,7 @@ taiwan,2010,2217.0
 taiwan,2011,2292.0
 taiwan,2012,2150.0
 taiwan,2013,2251.0
+taiwan,2014,1985.0
 tajikistan,1992,54.0
 tajikistan,1993,41.0
 tajikistan,1994,27.0
@@ -14807,6 +15041,7 @@ tajikistan,2010,39.0
 tajikistan,2011,41.0
 tajikistan,2012,34.0
 tajikistan,2013,52.0
+tajikistan,2014,156.0
 tanganyika,1950,0.0
 tanganyika,1951,0.0
 tanganyika,1952,0.0
@@ -14903,10 +15138,11 @@ thailand,2006,5359.0
 thailand,2007,4851.0
 thailand,2008,4305.0
 thailand,2009,4564.0
-thailand,2010,4963.0
-thailand,2011,4978.0
-thailand,2012,5582.0
-thailand,2013,5712.0
+thailand,2010,3922.0
+thailand,2011,4119.0
+thailand,2012,4319.0
+thailand,2013,4876.0
+thailand,2014,4757.0
 timor_leste_formerly_east_timor,2002,0.0
 timor_leste_formerly_east_timor,2003,0.0
 timor_leste_formerly_east_timor,2004,0.0
@@ -14919,6 +15155,7 @@ timor_leste_formerly_east_timor,2010,0.0
 timor_leste_formerly_east_timor,2011,0.0
 timor_leste_formerly_east_timor,2012,0.0
 timor_leste_formerly_east_timor,2013,0.0
+timor_leste_formerly_east_timor,2014,0.0
 togo,1950,0.0
 togo,1951,0.0
 togo,1952,0.0
@@ -14981,8 +15218,9 @@ togo,2008,172.0
 togo,2009,160.0
 togo,2010,161.0
 togo,2011,158.0
-togo,2012,160.0
-togo,2013,168.0
+togo,2012,218.0
+togo,2013,244.0
+togo,2014,228.0
 tonga,1950,0.0
 tonga,1951,0.0
 tonga,1952,0.0
@@ -15047,6 +15285,7 @@ tonga,2010,0.0
 tonga,2011,0.0
 tonga,2012,0.0
 tonga,2013,0.0
+tonga,2014,0.0
 trinidad_and_tobago,1908,0.0
 trinidad_and_tobago,1909,0.0
 trinidad_and_tobago,1910,0.0
@@ -15153,6 +15392,7 @@ trinidad_and_tobago,2010,108.0
 trinidad_and_tobago,2011,112.0
 trinidad_and_tobago,2012,89.0
 trinidad_and_tobago,2013,109.0
+trinidad_and_tobago,2014,114.0
 tunisia,1916,0.0
 tunisia,1917,0.0
 tunisia,1918,0.0
@@ -15243,6 +15483,7 @@ tunisia,2010,1098.0
 tunisia,2011,959.0
 tunisia,2012,985.0
 tunisia,2013,1021.0
+tunisia,2014,1241.0
 turkey,1865,0.0
 turkey,1866,0.0
 turkey,1867,0.0
@@ -15392,6 +15633,7 @@ turkey,2010,8532.0
 turkey,2011,8623.0
 turkey,2012,8688.0
 turkey,2013,9702.0
+turkey,2014,9701.0
 turkmenistan,1992,150.0
 turkmenistan,1993,150.0
 turkmenistan,1994,95.0
@@ -15414,6 +15656,12 @@ turkmenistan,2010,156.0
 turkmenistan,2011,265.0
 turkmenistan,2012,322.0
 turkmenistan,2013,360.0
+turkmenistan,2014,394.0
+turks_and_caicos_islands,1990,0.0
+turks_and_caicos_islands,1991,0.0
+turks_and_caicos_islands,1992,0.0
+turks_and_caicos_islands,1993,0.0
+turks_and_caicos_islands,1994,0.0
 turks_and_caicos_islands,1995,0.0
 turks_and_caicos_islands,1996,0.0
 turks_and_caicos_islands,1997,0.0
@@ -15433,6 +15681,32 @@ turks_and_caicos_islands,2010,0.0
 turks_and_caicos_islands,2011,0.0
 turks_and_caicos_islands,2012,0.0
 turks_and_caicos_islands,2013,0.0
+turks_and_caicos_islands,2014,0.0
+tuvalu,1990,0.0
+tuvalu,1991,0.0
+tuvalu,1992,0.0
+tuvalu,1993,0.0
+tuvalu,1994,0.0
+tuvalu,1995,0.0
+tuvalu,1996,0.0
+tuvalu,1997,0.0
+tuvalu,1998,0.0
+tuvalu,1999,0.0
+tuvalu,2000,0.0
+tuvalu,2001,0.0
+tuvalu,2002,0.0
+tuvalu,2003,0.0
+tuvalu,2004,0.0
+tuvalu,2005,0.0
+tuvalu,2006,0.0
+tuvalu,2007,0.0
+tuvalu,2008,0.0
+tuvalu,2009,0.0
+tuvalu,2010,0.0
+tuvalu,2011,0.0
+tuvalu,2012,0.0
+tuvalu,2013,0.0
+tuvalu,2014,0.0
 uganda,1950,0.0
 uganda,1951,0.0
 uganda,1952,0.0
@@ -15497,6 +15771,7 @@ uganda,2010,183.0
 uganda,2011,227.0
 uganda,2012,242.0
 uganda,2013,275.0
+uganda,2014,291.0
 ukraine,1992,2734.0
 ukraine,1993,2040.0
 ukraine,1994,1550.0
@@ -15517,8 +15792,9 @@ ukraine,2008,2029.0
 ukraine,2009,1291.0
 ukraine,2010,1286.0
 ukraine,2011,1430.0
-ukraine,2012,1333.0
-ukraine,2013,1265.0
+ukraine,2012,1339.0
+ukraine,2013,1341.0
+ukraine,2014,1310.0
 united_arab_emirates,1959,0.0
 united_arab_emirates,1960,0.0
 united_arab_emirates,1961,0.0
@@ -15572,8 +15848,9 @@ united_arab_emirates,2008,2976.0
 united_arab_emirates,2009,2584.0
 united_arab_emirates,2010,2448.0
 united_arab_emirates,2011,2448.0
-united_arab_emirates,2012,2312.0
-united_arab_emirates,2013,2856.0
+united_arab_emirates,2012,2094.0
+united_arab_emirates,2013,2135.0
+united_arab_emirates,2014,2176.0
 united_kingdom,1751,0.0
 united_kingdom,1752,0.0
 united_kingdom,1753,0.0
@@ -15837,6 +16114,7 @@ united_kingdom,2010,1072.0
 united_kingdom,2011,1160.0
 united_kingdom,2012,1081.0
 united_kingdom,2013,1116.0
+united_kingdom,2014,1218.0
 united_korea,1905,0.0
 united_korea,1909,0.0
 united_korea,1910,0.0
@@ -15916,7 +16194,8 @@ united_republic_of_tanzania,2009,264.0
 united_republic_of_tanzania,2010,314.0
 united_republic_of_tanzania,2011,328.0
 united_republic_of_tanzania,2012,351.0
-united_republic_of_tanzania,2013,354.0
+united_republic_of_tanzania,2013,319.0
+united_republic_of_tanzania,2014,382.0
 united_states_of_america,1800,0.0
 united_states_of_america,1801,0.0
 united_states_of_america,1802,0.0
@@ -16131,6 +16410,7 @@ united_states_of_america,2010,9139.0
 united_states_of_america,2011,9335.0
 united_states_of_america,2012,10191.0
 united_states_of_america,2013,10528.0
+united_states_of_america,2014,11314.0
 uruguay,1932,21.0
 uruguay,1933,18.0
 uruguay,1934,14.0
@@ -16212,7 +16492,8 @@ uruguay,2009,143.0
 uruguay,2010,113.0
 uruguay,2011,132.0
 uruguay,2012,119.0
-uruguay,2013,122.0
+uruguay,2013,116.0
+uruguay,2014,112.0
 ussr,1830,0.0
 ussr,1831,0.0
 ussr,1832,0.0
@@ -16375,6 +16656,7 @@ uzbekistan,2010,935.0
 uzbekistan,2011,911.0
 uzbekistan,2012,925.0
 uzbekistan,2013,951.0
+uzbekistan,2014,1000.0
 vanuatu,1962,0.0
 vanuatu,1963,0.0
 vanuatu,1964,0.0
@@ -16427,6 +16709,7 @@ vanuatu,2010,0.0
 vanuatu,2011,0.0
 vanuatu,2012,0.0
 vanuatu,2013,0.0
+vanuatu,2014,0.0
 venezuela,1904,0.0
 venezuela,1908,0.0
 venezuela,1913,0.0
@@ -16528,8 +16811,9 @@ venezuela,2008,1094.0
 venezuela,2009,1074.0
 venezuela,2010,968.0
 venezuela,2011,1055.0
-venezuela,2012,1047.0
-venezuela,2013,1061.0
+venezuela,2012,1103.0
+venezuela,2013,1151.0
+venezuela,2014,1088.0
 viet_nam,1892,0.0
 viet_nam,1893,0.0
 viet_nam,1894,0.0
@@ -16627,7 +16911,8 @@ viet_nam,2009,6638.0
 viet_nam,2010,7589.0
 viet_nam,2011,7925.0
 viet_nam,2012,7552.0
-viet_nam,2013,7888.0
+viet_nam,2013,7822.0
+viet_nam,2014,8229.0
 wallis_and_futuna_islands,2001,0.0
 wallis_and_futuna_islands,2002,0.0
 wallis_and_futuna_islands,2003,0.0
@@ -16641,6 +16926,7 @@ wallis_and_futuna_islands,2010,0.0
 wallis_and_futuna_islands,2011,0.0
 wallis_and_futuna_islands,2012,0.0
 wallis_and_futuna_islands,2013,0.0
+wallis_and_futuna_islands,2014,0.0
 yemen,1991,116.0
 yemen,1992,109.0
 yemen,1993,109.0
@@ -16662,8 +16948,9 @@ yemen,2008,287.0
 yemen,2009,288.0
 yemen,2010,254.0
 yemen,2011,129.0
-yemen,2012,272.0
-yemen,2013,408.0
+yemen,2012,375.0
+yemen,2013,449.0
+yemen,2014,381.0
 yugoslavia_former_socialist_federal_republic,1880,0.0
 yugoslavia_former_socialist_federal_republic,1885,0.0
 yugoslavia_former_socialist_federal_republic,1890,0.0
@@ -16822,9 +17109,10 @@ zambia,2007,73.0
 zambia,2008,76.0
 zambia,2009,120.0
 zambia,2010,153.0
-zambia,2011,163.0
-zambia,2012,163.0
-zambia,2013,163.0
+zambia,2011,167.0
+zambia,2012,215.0
+zambia,2013,246.0
+zambia,2014,299.0
 zanzibar,1950,0.0
 zanzibar,1951,0.0
 zanzibar,1952,0.0
@@ -16940,5 +17228,6 @@ zimbabwe,2008,54.0
 zimbabwe,2009,95.0
 zimbabwe,2010,109.0
 zimbabwe,2011,136.0
-zimbabwe,2012,150.0
-zimbabwe,2013,163.0
+zimbabwe,2012,201.0
+zimbabwe,2013,162.0
+zimbabwe,2014,177.0
