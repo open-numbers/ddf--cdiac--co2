@@ -2,15 +2,17 @@
 """transform the CDIAC CO2 data set to DDF model"""
 
 import os
-import pandas as pd
+
 import numpy as np
-from ddf_utils.str import to_concept_id, format_float_digits
-from ddf_utils.io import cleanup
+import pandas as pd
+
 from ddf_utils.datapackage import dump_json, get_datapackage
+from ddf_utils.io import cleanup
+from ddf_utils.str import format_float_digits, to_concept_id
 
 # configuration of file path
-nation_file = '../source/nation.1751_2014.csv'
-global_file = '../source/global.1751_2014.csv'
+nation_file = '../source/nation.csv'
+global_file = '../source/global.csv'
 out_dir = '../../'
 
 
