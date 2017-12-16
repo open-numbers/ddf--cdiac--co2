@@ -1,43 +1,41 @@
 {
     "name": "ddf--cdiac--co2",
-    "title": "ddf--cdiac--co2",
-    "description": "",
-    "version": "0.0.1",
     "language": {
         "id": "en",
         "name": "English"
     },
-    "translations": [],
-    "license": "",
     "author": "",
+    "description": "",
+    "license": "",
+    "title": "ddf--cdiac--co2",
+    "translations": [],
+    "version": "1.0.0",
+    "created": "2017-12-15T18:52:22.660138+00:00",
     "resources": [
         {
-            "path": "ddf--concepts.csv",
-            "name": "ddf--concepts",
+            "path": "ddf--datapoints--total_carbon_emissions--by--global--year.csv",
+            "name": "ddf--datapoints--total_carbon_emissions--by--global--year",
             "schema": {
                 "fields": [
                     {
-                        "name": "concept"
+                        "name": "global"
                     },
                     {
-                        "name": "name"
+                        "name": "year"
                     },
                     {
-                        "name": "concept_type"
-                    },
-                    {
-                        "name": "unit"
-                    },
-                    {
-                        "name": "description"
+                        "name": "total_carbon_emissions"
                     }
                 ],
-                "primaryKey": "concept"
+                "primaryKey": [
+                    "global",
+                    "year"
+                ]
             }
         },
         {
-            "path": "ddf--datapoints--carbon_emissions_bunker_fuels--by--nation--year.csv",
-            "name": "ddf--datapoints--carbon_emissions_bunker_fuels--by--nation--year",
+            "path": "ddf--datapoints--total_carbon_emissions--by--nation--year.csv",
+            "name": "ddf--datapoints--total_carbon_emissions--by--nation--year",
             "schema": {
                 "fields": [
                     {
@@ -47,7 +45,7 @@
                         "name": "year"
                     },
                     {
-                        "name": "carbon_emissions_bunker_fuels"
+                        "name": "total_carbon_emissions"
                     }
                 ],
                 "primaryKey": [
@@ -99,29 +97,8 @@
             }
         },
         {
-            "path": "ddf--datapoints--carbon_emissions_gas_flaring--by--global--year.csv",
-            "name": "ddf--datapoints--carbon_emissions_gas_flaring--by--global--year",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "global"
-                    },
-                    {
-                        "name": "year"
-                    },
-                    {
-                        "name": "carbon_emissions_gas_flaring"
-                    }
-                ],
-                "primaryKey": [
-                    "global",
-                    "year"
-                ]
-            }
-        },
-        {
-            "path": "ddf--datapoints--carbon_emissions_gas_flaring--by--nation--year.csv",
-            "name": "ddf--datapoints--carbon_emissions_gas_flaring--by--nation--year",
+            "path": "ddf--datapoints--carbon_emissions_bunker_fuels--by--nation--year.csv",
+            "name": "ddf--datapoints--carbon_emissions_bunker_fuels--by--nation--year",
             "schema": {
                 "fields": [
                     {
@@ -131,7 +108,7 @@
                         "name": "year"
                     },
                     {
-                        "name": "carbon_emissions_gas_flaring"
+                        "name": "carbon_emissions_bunker_fuels"
                     }
                 ],
                 "primaryKey": [
@@ -162,6 +139,27 @@
             }
         },
         {
+            "path": "ddf--datapoints--carbon_emissions_gas_flaring--by--global--year.csv",
+            "name": "ddf--datapoints--carbon_emissions_gas_flaring--by--global--year",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "global"
+                    },
+                    {
+                        "name": "year"
+                    },
+                    {
+                        "name": "carbon_emissions_gas_flaring"
+                    }
+                ],
+                "primaryKey": [
+                    "global",
+                    "year"
+                ]
+            }
+        },
+        {
             "path": "ddf--datapoints--carbon_emissions_gas_fuel_consumption--by--nation--year.csv",
             "name": "ddf--datapoints--carbon_emissions_gas_fuel_consumption--by--nation--year",
             "schema": {
@@ -183,29 +181,8 @@
             }
         },
         {
-            "path": "ddf--datapoints--carbon_emissions_liquid_fuel_consumption--by--global--year.csv",
-            "name": "ddf--datapoints--carbon_emissions_liquid_fuel_consumption--by--global--year",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "global"
-                    },
-                    {
-                        "name": "year"
-                    },
-                    {
-                        "name": "carbon_emissions_liquid_fuel_consumption"
-                    }
-                ],
-                "primaryKey": [
-                    "global",
-                    "year"
-                ]
-            }
-        },
-        {
-            "path": "ddf--datapoints--carbon_emissions_liquid_fuel_consumption--by--nation--year.csv",
-            "name": "ddf--datapoints--carbon_emissions_liquid_fuel_consumption--by--nation--year",
+            "path": "ddf--datapoints--carbon_emissions_gas_flaring--by--nation--year.csv",
+            "name": "ddf--datapoints--carbon_emissions_gas_flaring--by--nation--year",
             "schema": {
                 "fields": [
                     {
@@ -215,7 +192,7 @@
                         "name": "year"
                     },
                     {
-                        "name": "carbon_emissions_liquid_fuel_consumption"
+                        "name": "carbon_emissions_gas_flaring"
                     }
                 ],
                 "primaryKey": [
@@ -225,29 +202,23 @@
             }
         },
         {
-            "path": "ddf--datapoints--carbon_emissions_per_capita--by--global--year.csv",
-            "name": "ddf--datapoints--carbon_emissions_per_capita--by--global--year",
+            "path": "ddf--entities--global.csv",
+            "name": "ddf--entities--global",
             "schema": {
                 "fields": [
                     {
                         "name": "global"
                     },
                     {
-                        "name": "year"
-                    },
-                    {
-                        "name": "carbon_emissions_per_capita"
+                        "name": "name"
                     }
                 ],
-                "primaryKey": [
-                    "global",
-                    "year"
-                ]
+                "primaryKey": "global"
             }
         },
         {
-            "path": "ddf--datapoints--carbon_emissions_per_capita--by--nation--year.csv",
-            "name": "ddf--datapoints--carbon_emissions_per_capita--by--nation--year",
+            "path": "ddf--datapoints--carbon_emissions_solid_fuel_consumption--by--nation--year.csv",
+            "name": "ddf--datapoints--carbon_emissions_solid_fuel_consumption--by--nation--year",
             "schema": {
                 "fields": [
                     {
@@ -257,7 +228,7 @@
                         "name": "year"
                     },
                     {
-                        "name": "carbon_emissions_per_capita"
+                        "name": "carbon_emissions_solid_fuel_consumption"
                     }
                 ],
                 "primaryKey": [
@@ -288,8 +259,8 @@
             }
         },
         {
-            "path": "ddf--datapoints--carbon_emissions_solid_fuel_consumption--by--nation--year.csv",
-            "name": "ddf--datapoints--carbon_emissions_solid_fuel_consumption--by--nation--year",
+            "path": "ddf--datapoints--carbon_emissions_liquid_fuel_consumption--by--nation--year.csv",
+            "name": "ddf--datapoints--carbon_emissions_liquid_fuel_consumption--by--nation--year",
             "schema": {
                 "fields": [
                     {
@@ -299,7 +270,7 @@
                         "name": "year"
                     },
                     {
-                        "name": "carbon_emissions_solid_fuel_consumption"
+                        "name": "carbon_emissions_liquid_fuel_consumption"
                     }
                 ],
                 "primaryKey": [
@@ -309,8 +280,8 @@
             }
         },
         {
-            "path": "ddf--datapoints--total_carbon_emissions--by--global--year.csv",
-            "name": "ddf--datapoints--total_carbon_emissions--by--global--year",
+            "path": "ddf--datapoints--carbon_emissions_liquid_fuel_consumption--by--global--year.csv",
+            "name": "ddf--datapoints--carbon_emissions_liquid_fuel_consumption--by--global--year",
             "schema": {
                 "fields": [
                     {
@@ -320,7 +291,7 @@
                         "name": "year"
                     },
                     {
-                        "name": "total_carbon_emissions"
+                        "name": "carbon_emissions_liquid_fuel_consumption"
                     }
                 ],
                 "primaryKey": [
@@ -330,8 +301,32 @@
             }
         },
         {
-            "path": "ddf--datapoints--total_carbon_emissions--by--nation--year.csv",
-            "name": "ddf--datapoints--total_carbon_emissions--by--nation--year",
+            "path": "ddf--concepts.csv",
+            "name": "ddf--concepts",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "concept"
+                    },
+                    {
+                        "name": "name"
+                    },
+                    {
+                        "name": "concept_type"
+                    },
+                    {
+                        "name": "unit"
+                    },
+                    {
+                        "name": "description"
+                    }
+                ],
+                "primaryKey": "concept"
+            }
+        },
+        {
+            "path": "ddf--datapoints--carbon_emissions_per_capita--by--nation--year.csv",
+            "name": "ddf--datapoints--carbon_emissions_per_capita--by--nation--year",
             "schema": {
                 "fields": [
                     {
@@ -341,7 +336,7 @@
                         "name": "year"
                     },
                     {
-                        "name": "total_carbon_emissions"
+                        "name": "carbon_emissions_per_capita"
                     }
                 ],
                 "primaryKey": [
@@ -351,18 +346,24 @@
             }
         },
         {
-            "path": "ddf--entities--global.csv",
-            "name": "ddf--entities--global",
+            "path": "ddf--datapoints--carbon_emissions_per_capita--by--global--year.csv",
+            "name": "ddf--datapoints--carbon_emissions_per_capita--by--global--year",
             "schema": {
                 "fields": [
                     {
                         "name": "global"
                     },
                     {
-                        "name": "name"
+                        "name": "year"
+                    },
+                    {
+                        "name": "carbon_emissions_per_capita"
                     }
                 ],
-                "primaryKey": "global"
+                "primaryKey": [
+                    "global",
+                    "year"
+                ]
             }
         },
         {
@@ -380,5 +381,217 @@
                 "primaryKey": "nation"
             }
         }
-    ]
+    ],
+    "ddfSchema": {
+        "concepts": [
+            {
+                "primaryKey": [
+                    "concept"
+                ],
+                "value": "description",
+                "resources": [
+                    "ddf--concepts"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "concept"
+                ],
+                "value": "unit",
+                "resources": [
+                    "ddf--concepts"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "concept"
+                ],
+                "value": "concept_type",
+                "resources": [
+                    "ddf--concepts"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "concept"
+                ],
+                "value": "name",
+                "resources": [
+                    "ddf--concepts"
+                ]
+            }
+        ],
+        "entities": [
+            {
+                "primaryKey": [
+                    "global"
+                ],
+                "value": "name",
+                "resources": [
+                    "ddf--entities--global"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "nation"
+                ],
+                "value": "name",
+                "resources": [
+                    "ddf--entities--nation"
+                ]
+            }
+        ],
+        "datapoints": [
+            {
+                "primaryKey": [
+                    "global",
+                    "year"
+                ],
+                "value": "total_carbon_emissions",
+                "resources": [
+                    "ddf--datapoints--total_carbon_emissions--by--global--year"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "nation",
+                    "year"
+                ],
+                "value": "total_carbon_emissions",
+                "resources": [
+                    "ddf--datapoints--total_carbon_emissions--by--nation--year"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "global",
+                    "year"
+                ],
+                "value": "carbon_emissions_cement_production",
+                "resources": [
+                    "ddf--datapoints--carbon_emissions_cement_production--by--global--year"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "nation",
+                    "year"
+                ],
+                "value": "carbon_emissions_cement_production",
+                "resources": [
+                    "ddf--datapoints--carbon_emissions_cement_production--by--nation--year"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "nation",
+                    "year"
+                ],
+                "value": "carbon_emissions_bunker_fuels",
+                "resources": [
+                    "ddf--datapoints--carbon_emissions_bunker_fuels--by--nation--year"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "global",
+                    "year"
+                ],
+                "value": "carbon_emissions_gas_fuel_consumption",
+                "resources": [
+                    "ddf--datapoints--carbon_emissions_gas_fuel_consumption--by--global--year"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "global",
+                    "year"
+                ],
+                "value": "carbon_emissions_gas_flaring",
+                "resources": [
+                    "ddf--datapoints--carbon_emissions_gas_flaring--by--global--year"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "nation",
+                    "year"
+                ],
+                "value": "carbon_emissions_gas_fuel_consumption",
+                "resources": [
+                    "ddf--datapoints--carbon_emissions_gas_fuel_consumption--by--nation--year"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "nation",
+                    "year"
+                ],
+                "value": "carbon_emissions_gas_flaring",
+                "resources": [
+                    "ddf--datapoints--carbon_emissions_gas_flaring--by--nation--year"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "nation",
+                    "year"
+                ],
+                "value": "carbon_emissions_solid_fuel_consumption",
+                "resources": [
+                    "ddf--datapoints--carbon_emissions_solid_fuel_consumption--by--nation--year"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "global",
+                    "year"
+                ],
+                "value": "carbon_emissions_solid_fuel_consumption",
+                "resources": [
+                    "ddf--datapoints--carbon_emissions_solid_fuel_consumption--by--global--year"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "nation",
+                    "year"
+                ],
+                "value": "carbon_emissions_liquid_fuel_consumption",
+                "resources": [
+                    "ddf--datapoints--carbon_emissions_liquid_fuel_consumption--by--nation--year"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "global",
+                    "year"
+                ],
+                "value": "carbon_emissions_liquid_fuel_consumption",
+                "resources": [
+                    "ddf--datapoints--carbon_emissions_liquid_fuel_consumption--by--global--year"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "nation",
+                    "year"
+                ],
+                "value": "carbon_emissions_per_capita",
+                "resources": [
+                    "ddf--datapoints--carbon_emissions_per_capita--by--nation--year"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "global",
+                    "year"
+                ],
+                "value": "carbon_emissions_per_capita",
+                "resources": [
+                    "ddf--datapoints--carbon_emissions_per_capita--by--global--year"
+                ]
+            }
+        ]
+    }
 }
