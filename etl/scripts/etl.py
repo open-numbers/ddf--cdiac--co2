@@ -95,7 +95,7 @@ if __name__ == '__main__':
     cdf.loc['year', 'concept_type'] = 'time'
 
     cdf = cdf.reset_index()
-    cdf = cdf.sort_values(by='concept_type')
+    cdf = cdf.sort_values(by=['concept_type', 'concept'])
 
     cdf.to_csv(os.path.join(out_dir, 'ddf--concepts.csv'), index=False)
 
@@ -152,5 +152,4 @@ if __name__ == '__main__':
 
     dump_json(os.path.join(out_dir, 'datapackage.json'), get_datapackage(out_dir, update=True))
 
-    print("dataset generated! Please run `validate-ddf -i` in the output dir to"
-          "generate datapackage.json!")
+    print("dataset generated!")
