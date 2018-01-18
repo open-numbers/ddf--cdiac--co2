@@ -2,18 +2,64 @@
 """transform the CDIAC CO2 data set to DDF model"""
 
 import os
+import sys
 
 import numpy as np
 import pandas as pd
+import requests
+
+from datetime import datetime
+from io import BytesIO
 
 from ddf_utils.datapackage import dump_json, get_datapackage
 from ddf_utils.io import cleanup
 from ddf_utils.str import format_float_digits, to_concept_id
 
+
 # configuration of file path
 nation_file = '../source/nation.csv'
 global_file = '../source/global.csv'
 out_dir = '../../'
+source_url_tmpl = 'http://cdiac.ess-dive.lbl.gov/ftp/ndp030/CSV-FILES/{group}.1751_{year}.csv'
+last_update = 2014
+
+def update_source():
+    current_year = datetime.now().year
+
+    nation_fp = None
+    global_fp = None
+
+    for y in range(current_year, last_update, -1):
+        res = get_file_for('nation', y)
+        if res is not None:
+            nation_fp = res
+    for y in range(current_year, last_update, -1):
+        res = get_file_for('global', y)
+        if res is not None:
+            global_fp = res
+
+    if nation_fp is None or global_fp is None:
+        print('no new source files! If you believe there are new source files, '
+              'please check the etl script. Source files can be fond at:'
+              'http://cdiac.ess-dive.lbl.gov/ftp/ndp030/CSV-FILES/')
+        return False
+    else:
+        with open(nation_file, 'wb') as f:
+            f.write(nation_fp.read())
+            f.close()
+
+        with open(global_file, 'wb') as f:
+            f.write(global_fp.read())
+            f.close
+        return True
+
+def get_file_for(group, year):
+    url = source_url_tmpl.format(group=group, year=year)
+    r = requests.get(url)
+    if r.status_code == 200:
+        return BytesIO(r.content)
+    else:
+        return None
 
 
 def read_source(f, skip=0, **kwargs):
@@ -55,9 +101,18 @@ def get_concept_name(concept):
 
 if __name__ == '__main__':
 
+    # updating source files
+    print("update source files..")
+    updated = update_source()
+    if not updated:
+        print('no update, end the process.')
+        sys.exit(0)
+
     # cleanup the output dir
+    print('clear up the old files..')
     cleanup(out_dir)
 
+    # generate the dataset
     print("generating dataset...")
 
     # read source data
