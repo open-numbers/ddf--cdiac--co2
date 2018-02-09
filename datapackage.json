@@ -5,7 +5,7 @@
         "name": "English"
     },
     "author": "",
-    "created": "2018-01-03T14:23:14.131330+00:00",
+    "created": "2018-02-09T09:22:20.944887+00:00",
     "description": "",
     "license": "",
     "title": "ddf--cdiac--co2",
@@ -397,6 +397,15 @@
                 "primaryKey": [
                     "concept"
                 ],
+                "value": "concept_type",
+                "resources": [
+                    "ddf--concepts"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "concept"
+                ],
                 "value": "description",
                 "resources": [
                     "ddf--concepts"
@@ -407,15 +416,6 @@
                     "concept"
                 ],
                 "value": "unit",
-                "resources": [
-                    "ddf--concepts"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "concept"
-                ],
-                "value": "concept_type",
                 "resources": [
                     "ddf--concepts"
                 ]
