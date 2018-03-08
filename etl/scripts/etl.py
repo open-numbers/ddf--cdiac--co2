@@ -59,6 +59,12 @@ def get_concept_name(concept):
         return concept.replace('_', ' ').title()
 
 
+def replace_negative(ser):
+    '''replacing negative numbers with zeros'''
+    ser.loc[ser < 0] = 0
+    return ser
+
+
 if __name__ == '__main__':
 
     # cleanup the output dir
@@ -143,6 +149,7 @@ if __name__ == '__main__':
 
     for col in gdf:
         ser = gdf[col].map(float)  # some columns not reconized as float. fix those here.
+        ser = replace_negative(ser)
         if 'per_capita' in col:  # don't change per capita data
             (ser
              .dropna()
@@ -158,6 +165,6 @@ if __name__ == '__main__':
                               'ddf--datapoints--{}--by--global--year.csv'.format(col)),
                  header=True))
 
-    dump_json(os.path.join(out_dir, 'datapackage.json'), get_datapackage(out_dir, update=True))
+    # dump_json(os.path.join(out_dir, 'datapackage.json'), get_datapackage(out_dir, update=True))
 
     print("dataset generated!")
