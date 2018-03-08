@@ -5552,7 +5552,7 @@ ireland,2011,2.09
 ireland,2012,2.08
 ireland,2013,2.03
 ireland,2014,1.99
-islamic_republic_of_iran,1950,-0.08
+islamic_republic_of_iran,1950,0.0
 islamic_republic_of_iran,1951,0.11
 islamic_republic_of_iran,1952,0.06
 islamic_republic_of_iran,1953,0.06
@@ -6086,8 +6086,8 @@ kiribati,2013,0.15
 kiribati,2014,0.15
 kuwait,1950,0.69
 kuwait,1951,0.19
-kuwait,1952,-0.68
-kuwait,1953,-0.08
+kuwait,1952,0.0
+kuwait,1953,0.0
 kuwait,1954,2.02
 kuwait,1955,2.57
 kuwait,1956,1.4
@@ -9691,10 +9691,10 @@ sarawak,1965,0.52
 sarawak,1966,0.56
 sarawak,1967,0.41
 sarawak,1968,0.45
-sarawak,1969,-0.23
+sarawak,1969,0.0
 saudi_arabia,1950,0.45
-saudi_arabia,1951,-0.03
-saudi_arabia,1952,-0.01
+saudi_arabia,1951,0.0
+saudi_arabia,1952,0.0
 saudi_arabia,1953,0.04
 saudi_arabia,1954,0.1
 saudi_arabia,1955,0.16
@@ -9767,7 +9767,7 @@ senegal,1964,0.07
 senegal,1965,0.13
 senegal,1966,0.13
 senegal,1967,0.05
-senegal,1968,-0.01
+senegal,1968,0.0
 senegal,1969,0.03
 senegal,1970,0.09
 senegal,1971,0.09
