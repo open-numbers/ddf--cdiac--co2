@@ -132,8 +132,10 @@ if __name__ == '__main__':
     ndf = nation_data.set_index(['nation', 'year']).copy()
 
     for col in ndf:
+        ser = ndf[col].copy()
+        ser = replace_negative(ser)
         # ndf[col] = ndf[col].map(format_float_digits)
-        (ndf[col]
+        (ser
          .dropna()
          .to_csv(os.path.join(out_dir,
                               'ddf--datapoints--{}--by--nation--year.csv'.format(col)),
