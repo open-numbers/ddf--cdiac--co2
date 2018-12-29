@@ -2,18 +2,12 @@
 """transform the CDIAC CO2 data set to DDF model"""
 
 import os
-import sys
 
 import numpy as np
 import pandas as pd
-import requests
 
-from datetime import datetime
-from io import BytesIO
-
-from ddf_utils.datapackage import dump_json, get_datapackage
 from ddf_utils.io import cleanup
-from ddf_utils.str import format_float_digits, to_concept_id
+from ddf_utils.str import to_concept_id
 
 
 # configuration of file path
@@ -45,7 +39,7 @@ def get_concept_id(name):
         ]
         for i in subtypes:
             if i in name.lower():
-                return 'carbon_emissions_'+to_concept_id(i)
+                return 'carbon_emissions_' + to_concept_id(i)
         # if nothing found, it should be a non measure concept.
         return to_concept_id(name)
 
@@ -84,7 +78,7 @@ if __name__ == '__main__':
 
     # fix nation name for hkg and mac. There is a typo in it.
     nation_data['nation'] = nation_data['nation'].map(
-            lambda x: x.replace('ADMINSTRATIVE', 'ADMINISTRATIVE') if 'ADMINSTRATIVE' in x else x)
+        lambda x: x.replace('ADMINSTRATIVE', 'ADMINISTRATIVE') if 'ADMINSTRATIVE' in x else x)
 
     # Concept Table
     concept_discrete = ['year', 'nation', 'global', 'name', 'unit', 'description']
@@ -160,13 +154,13 @@ if __name__ == '__main__':
                               'ddf--datapoints--{}--by--global--year.csv'.format(col)),
                  header=True))
         else:  # multiply 1000
-            ((ser*1000)
+            ((ser * 1000)
              .dropna()
              .to_csv(
                  os.path.join(out_dir,
                               'ddf--datapoints--{}--by--global--year.csv'.format(col)),
                  header=True))
 
-    # dump_json(os.path.join(out_dir, 'datapackage.json'), get_datapackage(out_dir, update=True))
+    # dump_json(os.path.join(out_dir, 'datapackage.json'), DP.get_datapackage(out_dir, update=True))
 
     print("dataset generated!")
